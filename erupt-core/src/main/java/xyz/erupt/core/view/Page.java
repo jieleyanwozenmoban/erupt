@@ -1,0 +1,55 @@
+package xyz.erupt.core.view;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import xyz.erupt.annotation.config.Comment;
+import xyz.erupt.annotation.model.Alert;
+import xyz.erupt.annotation.query.Sort;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * @author YuePeng
+ * date 2018-10-12.
+ */
+@Getter
+@Setter
+@NoArgsConstructor
+public class Page {
+
+    public static final int PAGE_MAX_DATA = 1000000;
+
+    private Integer pageIndex;
+
+    private Integer pageSize;
+
+    private List<Sort> sort;
+
+    private Integer totalPage;
+
+    private Long total;
+
+    @Comment("Map → when the value is a complex object, special handling is required. For example: {region:{id:1,name:'xxxx'}} must be converted to region_name for the frontend to render correctly")
+    private Collection<Map<String, Object>> list;
+
+    private Alert alert;
+
+    private String extraContent;
+
+    public void setTotal(Long total) {
+        this.total = total;
+        if (total % pageSize == 0) {
+            totalPage = total.intValue() / pageSize;
+        } else {
+            totalPage = total.intValue() / pageSize + 1;
+        }
+    }
+
+    public Page(Integer pageIndex, Integer pageSize) {
+        this.pageIndex = pageIndex;
+        this.pageSize = pageSize;
+    }
+}

@@ -1,0 +1,86 @@
+package xyz.erupt.upms.helper;
+
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
+import org.hibernate.annotations.NotFound;
+import org.hibernate.annotations.NotFoundAction;
+import xyz.erupt.annotation.EruptField;
+import xyz.erupt.annotation.EruptI18n;
+import xyz.erupt.annotation.config.Comment;
+import xyz.erupt.annotation.config.EruptSmartSkipSerialize;
+import xyz.erupt.annotation.sub_field.Edit;
+import xyz.erupt.annotation.sub_field.EditType;
+import xyz.erupt.annotation.sub_field.Readonly;
+import xyz.erupt.annotation.sub_field.View;
+import xyz.erupt.annotation.sub_field.sub_edit.DateType;
+import xyz.erupt.core.util.EruptSpringUtil;
+import xyz.erupt.jpa.model.BaseModel;
+import xyz.erupt.upms.model.EruptUserVo;
+import xyz.erupt.upms.service.EruptUserService;
+
+import java.util.Date;
+import java.util.Optional;
+
+/**
+ * @author YuePeng
+ * date 2021/3/15 10:23
+ */
+@Getter
+@Setter
+@MappedSuperclass
+@EruptI18n
+public class HyperModelUpdateVo extends BaseModel {
+
+    @Comment("Create time")
+    @EruptSmartSkipSerialize
+    private Date createTime;
+
+    @Comment("Creator")
+    @ManyToOne
+    @EruptSmartSkipSerialize
+    @NotFound(action = NotFoundAction.IGNORE)
+    @JoinColumn(foreignKey = @ForeignKey(ConstraintMode.NO_CONSTRAINT))
+    private EruptUserVo createUser;
+
+    @ManyToOne
+    @EruptField(
+            views = @View(title = "Updater", width = "100px", column = "name"),
+            edit = @Edit(title = "Updater", readonly = @Readonly(allowChange = false), type = EditType.REFERENCE_TABLE)
+    )
+    @EruptSmartSkipSerialize
+    @NotFound(action = NotFoundAction.IGNORE)
+    @JoinColumn(foreignKey = @ForeignKey(ConstraintMode.NO_CONSTRAINT))
+    private EruptUserVo updateUser;
+
+    @EruptField(
+            views = @View(title = "Update Time", sortable = true),
+            edit = @Edit(title = "Update Time", readonly = @Readonly(allowChange = false), dateType = @DateType(type = DateType.Type.DATE_TIME))
+    )
+    @EruptSmartSkipSerialize
+    private Date updateTime;
+
+    @PrePersist
+    protected void persist() {
+        try {
+            this.setCreateTime(new Date());
+            Optional.ofNullable(EruptSpringUtil.getBean(EruptUserService.class).getCurrentUid()).ifPresent(it -> {
+                this.setCreateUser(new EruptUserVo(it));
+            });
+        } catch (Exception ignored) {
+        }
+        this.update();
+    }
+
+    @PreUpdate
+    protected void update() {
+        try {
+            this.setUpdateTime(new Date());
+            Optional.ofNullable(EruptSpringUtil.getBean(EruptUserService.class).getCurrentUid()).ifPresent(it -> {
+                this.setUpdateUser(new EruptUserVo(it));
+            });
+        } catch (Exception ignored) {
+        }
+    }
+
+}

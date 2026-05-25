@@ -1,0 +1,419 @@
+key,zh-CN,zh-TW,en-US,fr-FR,ja-JP,ko-KR,ru-RU,es-ES,de-DE,pt-PT,id-ID,ar-SA
+Y,是,是,Yes,est,はい、,네,эт,es,ist,é,adalah,هو
+N,否,否,No,oui,いいえ、,아니오,нет,si,Oder,não,"Tidak,",لا
+finish,完成,完成,Finish,L’achèvement du,完了,완성,законч,completar,Weg!,terminar,selesai,إنجاز
+global.today,今天,今天,Today,aujourd’hui,今日,오늘,сегодн,hoy,Ist es das,hoje,Hari ini,اليوم
+global.yesterday,昨天,昨天,Yesterday,Hier,昨日（きのう）,어제,Вчера,Ieri,Und zwar gestern.,ontem,kemarin,بالأمس
+global.date.last_7_day,近7天,近7天,Last 7 day,7 derniers jours,7日近くです,최근 7일,Почти семь дней.,Últimos 7 días,Seit sieben tagen.,Últimos 7 dias,Hampir 7 hari,ما يقرب من 7 أيام
+global.date.last_30_day,近30天,近30天,Last 30 day,Près de 30 jours,30日近くです,근 30일,Почти 30 дней.,Casi 30 días,Fast 30 tage.,Quase 30 dias,Hampir 30 hari,ما يقرب من 30 يوما
+global.date.this_month,本月,本月,This month,Ce mois-ci,今の月,지난,месяц,Este mes,Diesen monat.,"Este mês,",Bulan ini,هذا الشهر
+global.date.last_month,上月,上月,Last month,Le mois dernier,先月,지난달,Прошл месяц,El último mes,Letzten monat,No mês passado,Bulan lalu.,الشهر الماضي
+global.home,首页,首頁,Home,La page de couverture,最初のページ,홈페이지,Главн страниц,En la primera página,Die titelseite.,Ficha técnica,Halaman depan,الصفحة الأولى
+global.cancel,取消,取消,Cancel,La suppression des,キャンセル,취소,отмен,cancelación,korrekt,cancelar,batalkan,إلغاء
+global.all,全部,全部,All,La totalité des,全部,전부,все,total,Das ganze glas.,todos,semua,كل
+global.check_all,全选,全選,Check all,Aléatoire!,すべて選択,전체선택,выбира,QuanXuan,Eine reine wahl.,Cobrir todos,memilih semua,QuanXuan
+global.check_none,不选,不選,Uncheck,ne,選択しない,선택하지않음,Не выбра,No seleccionado,Du hast keine wahl.,Não escolher,Tidak memilih.,وليس مملح؟
+global.ok,确定,確定,OK,déterminer,を選択します,확실합니다,увер,determinar,Könnten?,A certeza,yakin,تحديد
+global.keyword,请输入关键字,請輸入關鍵字,Please enter key words,Veuillez entrer un mot-clé,キーワードを入力してください,키워드를입력하세요,Введите ключевое слово,Por favor introduzca una palabra clave,Bitte geben sie das schlüsselwort ein,Por favor insira uma palavra-chave,"Kata kunci, silakan",يرجى إدخال الكلمة الرئيسية
+global.close,取消,取消,Close,fermer,閉じる,닫기,закрыть,cerrar,Schließen.,fechar,tutup,إغلاق
+global.view,查看,查看,View,voir,表示,보기,провер,ver,Ich kontrolliere sie.,ver,memeriksa,عرض
+global.delete,删除,刪除,Delete,supprimé,削除,삭제,удал,borrar,Löschen.,apagar,hapus,حذف
+global.new,新增,新增,New,nouveaux,追加,새로추가,нов,nuevos,hinzufügen,nova,baru,الإضافية
+global.add,增加,增加,Add,Une augmentation,增加,증가,увелич,aumento,Erhöhen.,aumentar,meningkatkan,زيادة
+global.editor,编辑,編輯,Edit,Rédacteur en chef,編集,편집,редактор,editor,Make up,editor,editor,التحرير
+global.update,修改,修改,Modify,La modification,変更,수정,модификац,La modificación,änderung,alterações,modifikasi,تعديل
+global.print,打印,列印,Print,Imprimer,印刷,인쇄,Печать,Imprimir,Drucken,Imprimir,Cetak,طباعة
+global.add.success,添加成功,添加成功,Add success,Ajouté avec succès,追加成功,성공추가,Добавить успех,Añadido con éxito,Abbruch. Abbruch.,Adicionado com sucesso,Tambahkan sukses,أضف النجاح
+global.select.one,请选中一条数据,請選中一條數據,Please select one data,Veuillez sélectionner une donnée,データを選択してください。,데이터를선택하십시오,"Пожалуйста, выберите сообщение","Por favor, seleccione un dato",Bitte wählen sie eine datei,"Por favor, selecione um dado",Silahkan pilih satu data,انتقِ a بيانات
+global.update.success,修改成功,修改成功,Update success,Modifié avec succès,修正成功,수정성공,Модификация завершена.,Modificado con éxito,Modifikation erfolgreich.,Modificado com sucesso,Revisi berhasil,تعديل ناجح
+global.delete.success,删除成功,刪除成功,Delete success,Supprimé avec succès,削除に成功しました,삭제성공,Удаление удалено.,Eliminado con éxito,Löschen erfolgreich.,Remoção bem sucedida,Sukses dihapus,حذف بنجاح
+global.delete.hint,请确认是否要删除,請確認是否要刪除,Please confirm to delete,Veuillez confirmer si vous souhaitez supprimer,削除するかどうか確認してください。,삭제할지확인하세요,"Пожалуйста, подтвердите удаление",Confirme si desea eliminar,Möchten sie sie entfernen,Confirme se deseja excluir,Silakan konfirmasi jika anda ingin menghapusnya,يرجى تأكيد ما إذا كان ينبغي حذفها
+global.delete.hint.check,请选中要删除的数据,請選中要刪除的數據,Please select delete data,Veuillez cocher les données que vous souhaitez supprimer,削除するデータを選択してください。,삭제할데이터를선택하십시오,"Пожалуйста, выберите удаленные данные",Seleccione los datos que desea eliminar,Bitte wählen sie die zu löschenden daten,Selecione os dados que você deseja excluir,Silahkan pilih data yang ingin anda hapus,اختر البيانات المراد حذفها
+global.reset_pwd,修改密码,修改密碼,Change pwd,Chg pwd,パス変更,비밀번호수정,Измени код.,Camb pwd,Codes ändern.,Alterar sua senha,Ubah sandi,تعديل كلمة المرور
+global.logout,退出登录,退出登錄,Log out,Déconnexion du login,ログアウト,로그인종료,Выход из системы.,Salir del login,Und loggen sie sich nicht ein.,Sair do login,Log masuk keluar,خروج تسجيل الدخول
+global.search.hint,搜索菜单,搜索菜單,Search menu,Rechercher le menu,検索メニュー,검색메뉴,Меню поиска.,Buscar el menú,Suche nach dem menü.,Procurar no menu,Menu pencarian,قائمة البحث
+global.confirm_logout,退出登录，是否继续?,退出系統，是否繼續?,Are you sure to log out and exit the system?,Sûr de se déconnecter et quitter le système?,ログアウトしてシステムを終了しますか？,로그아웃하고시스템을종료하시겠습니까?,"Вы уверены, что система списана и выведена из строя?",¿Seguro de salir y salir del sistema?,Und steigen sie aus Oder nicht?,Sair do login. Deseja continuar?,"Log keluar, apakah akan terus?",خروج تسجيل الدخول، هل تستمر؟
+global.confirm_delete,确认删除吗？,確認刪除嗎？,Are you sure to delete?,Confirmer la suppression?,削除を確認しますか？,삭제확인하시겠습니까?,Подтвердите удаление?,¿Confirmar la eliminación?,Ortung bestätigt?,Confirmar a exclusão?,Konfirmasi dihapus?,تأكيد حذف؟
+global.update.loading.hint,数据加载中无法保存!,數據加載中無法保存!,Data cannot be saved while loading!,Les données ne peuvent pas être sauvegardées lors du chargement!,データ読み込み中に保存できません。,데이터불러오는중저장할수없습니다!,Данные не сохраняются в загрузке!,¡Los datos no se pueden guardar en la carga!,Es kann nicht geladen werden.,Os dados não podem ser salvos no carregamento!,Tak dapat disimpan dalam pemuatan data!,لا يمكن حفظ البيانات في تحميل البيانات!
+global.no_data,暂无数据,無此資料,No Data,Aucune donnée,データがありません,데이터 없음,Приходящее множество доказательств,Datos aún no disponibles,Eine vermutung nimmt man Von zeit zu zeit.,Dados não disponíveis,Sudah tak terhitung jumlahnya,عدد لا يحصى من الوثائق
+global.copy_success,复制成功,復製成功,Successful replication,Copiez avec succès,複製成功です,복사에 성공했습니다,Подтверждаю.,Replicar el éxito,Kopie erfolgreich.,Replicar com sucesso,Sukses menyalin,تم النسخ
+global.pre_select,请先选择,請先選擇,Please select first,Veuillez sélectionner d’abord,先にお願いします,먼저 선택하세요,Выбирайте.,Por favor seleccione primero,Bitte wählen sie aus.,"Por favor, selecione primeiro",Silahkan pilih dulu,يرجى الاختيار أولا
+global.more,更多,更多,more,plus,もっと,더,больше,di più.,Sehr viel mehr.,mais,Lebih banyak,المزيد
+global.sort,排序,排序,Sort,Trier,並び替える,정렬,Сортировать,Ordenar,Sortieren,Ordenar,Mengurut,فرز
+gobal.search,搜索,搜尋,Search,Rechercher,検索,검색,Поиск,Buscar,Suchen,Procurar,Cari,بحث
+global.save,保存,保存,Save,Enregistrer,保存,저장,Сохранить,Guardar,Speichern,Salvar,Simpan,حفظ
+global.reset,重置,重置,Reset,Réinitialiser,リセット,초기화,Сбросить,Restablecer,Zurücksetzen,Redefinir,Reset,إعادة تعيين
+global.fullscreen,全屏,全屏,Fullscreen,Plein écran,フルスクリーン,전체화면,Полный экран,Pantalla completa,Vollbild,Tela cheia,Layar penuh,ملء الشاشة
+global.drag,拖拽,拖拽,Drag,Glisser,ドラッグ,드래그,Перетащить,Arrastrar,Ziehen,Arrastar,Seret,سحب
+global.copy,复制,複製,Copy,Copier,コピー,복사,Копировать,Copiar,Kopieren,Copiar,Salin,نسخ
+global.download,下载,下載,Download,Télécharger,ダウンロード,다운로드,Скачать,Descargar,Herunterladen,Baixar,Unduh,تحميل
+global.refresh,刷新,刷新,Refresh,Actualiser,更新,새로고침,Обновить,Actualizar,Aktualisieren,Atualizar,Segarkan,تحديث
+
+
+component.attachment.upload_hint,单击或拖动文件到此区域上传,單擊或拖動文件到此區域上傳,Click or drag the file to this area to upload,Cliquez ou faites glisser les fichiers dans cette zone pour les télécharger,ファイルをクリックまたはドラッグしてアップロードします,파일을이 영역으로 업로드하려면 누르거나 드래그하십시오,Нажмите или перетащите файл в эту область,Haga clic o arrastre los archivos a esta área para subir,Klicken Oder ziehen sie die datei in diese region zum aufladen,Clique ou arraste os arquivos para esta área para fazer upload,Klik atau tarik berkas untuk diunggah ke area ini,انقر أو اسحب الملف لتحميل في هذه المنطقة
+component.attachment.upload_format,文件格式,文件格式,File format,Format du fichier,ファイル形式です。,파일 형식,Формат файла,Formato de archivo,Format der dateien,Formato do arquivo,Format berkasname,تنسيق الملف
+table.totalLeft,共,共,Total,Total,合計,총계,всего,Total,Insgesamt.,Total,Total,مجموع
+table.totalRight,条,條,Items,Articles,件,개,шт.,artículos,Stück.,itens,item,بند
+table.operation,操作,操作,Action,Action,アクション,작업,действие,Acción,Aktion.,Ação,Aksi,العمل
+table.delete.hint,确认删除吗？,確認刪除嗎？,Are you sure to delete?,Confirmer la suppression?,削除を確認しますか？,삭제확인하시겠습니까?,Подтвердите удаление?,¿Confirmar la eliminación?,Ortung bestätigt?,Confirmar a exclusão?,Konfirmasi dihapus?,تأكيد حذف؟
+table.add,新增,新增,Add,nouveaux,追加,새로추가,нов,nuevos,hinzufügen,nova,baru,الإضافية
+table.delete,删除,刪除,Delete,supprimé,削除,삭제,удал,borrar,Löschen.,apagar,hapus,حذف
+table.download,下载,下載,Download,Le téléchargement,ダウンロード,다운로드,загрузк,descargar,Laden!,descarregar,download,تحميل
+table.import,导入,導入,Import,importations,インポート,가져오기,импортирова,importación,importiere,importação,Impor penanda,الاستيراد
+table.download_template,下载模板,下載模板,Download template,Télécharger le template,テンプレートをダウンロード,템플릿다운로드,Загрузка шаблона,Descargar la plantilla,Die schalung runterladen.,Baixe o template,Download template,تحميل القالب
+table.excel.import_hint,单击或拖动Excel文件到此区域上传,單擊或拖動Excel文件到此區域上傳,Click or drag the Excel file to this area to upload,Cliquez ou faites glisser le fichier Excel dans cette zone pour le télécharger,Excelファイルをクリックまたはドラッグしてこのエリアにアップロードします。,Excel파일을이지역에업로드하려면누르거나드래그하십시오,Нажмите или перетащите файл Excel в эту область,Haga clic o arrastre el archivo Excel a esta área para subir,Klicken Oder klappern Excel in diesen bereich,Clique ou arraste o arquivo Excel para esta área para fazer upload,Klik atau tarik file Excel untuk diunggah di area ini,انقر أو اسحب ملف إكسل لتحميل في المنطقة
+table.query,查询,查詢,Query,enquêtes,クエリー,조회,запрос,consulta,Recherchieren.,pesquisa,periksa,البحث
+table.col.ctrl,表格列控制,表格列控製,Table Control,Contrôle des colonnes tabulaires,テーブル列制御,표열제어,Управление колонкой таблиц,Control de columnas tabulares,Tabelle kontrollieren,Controle de colunas de tabela,Kontrol kolom tabel,التحكم في الجدول
+table.reset,重置条件,重置條件,Reset,Réinitialiser les conditions,条件をリセット,조건초기화,Условие сброса,Restablecer las condiciones,Umgesetzte bedingungen.,Redefinir condições,Kondisi reset,إعادة ضبط
+table.select_delete_item,请选中要删除的数据！,請選中要刪除的數據！,Please select delete data!,Veuillez cocher les données que vous souhaitez supprimer!,削除するデータを選択してください。,삭제할데이터를선택하십시오!,"Пожалуйста, выберите удаленные данные!","Por favor, seleccione los datos que desea eliminar!","Bitte wählen sie die dateien, die gelöscht werden sollen","Por favor, marque os dados que você deseja excluir!",Silahkan pilih data yang ingin dihapus!,يرجى اختيار البيانات لحذف!
+table.hint_delete_number,确定要删除这{}条数据吗？,確定要刪除這{}條數據嗎？,Are you sure want to delete this {} data?,Sûr de vouloir supprimer ces {} données?,この{}データを削除しますか？,이{}개의데이터를삭제하시겠습니까?,"Вы уверены, что хотите удалить эту информацию?",¿Seguro de que desea eliminar estos {} datos?,"Sind sie sicher, dass diese daten gelöscht werden sollen?",Tem certeza de que deseja excluir esses {} dados?,Kau yakin ingin menghapus semua ini?,هل أنت متأكد أنك تريد حذف هذه البيانات؟
+table.require.select_one,执行该操作时请至少选中一条数据,執行該操作時請至少選中一條數據,Select at least one data before performing this operation,Veuillez sélectionner au moins une donnée pour effectuer cette opération,この操作を行う場合は、少なくとも一つのデータを選択してください。,이작업을수행할때최소한하나의데이터를선택하십시오,"При выполнении этой операции, пожалуйста, выберите хотя бы Один файл","Por favor, seleccione al menos un dato para realizar esta operación","Bitte wählen sie mindestens eine datei, um diese operation durchzuführen","Por favor, selecione pelo menos um dado ao realizar esta operação",Pilih setidaknya satu data untuk melakukan operasi ini,انتقِ a على الأقل
+table.hint.operation,请确认是否执行此操作,請確認是否執行此操作,Confirm whether to perform this operation,Veuillez confirmer si cette action est effectuée,この操作を実行するかどうか確認してください。,이동작을실행할지확인하십시오,"Пожалуйста, подтвердите выполнение этой операции",Confirme si realiza esta acción,"Bitte stellen sie sicher, dass diese operation durchgeführt wird","Por favor, confirme se esta ação é realizada",Mohon konfirmasi jika aksi ini dilaksanakan,يرجى تأكيد ما إذا كان تنفيذ هذه العملية
+table.validate.required_one_select,执行该操作时请至少选中一条数据,執行該操作時請至少選中一條數據,Select at least one data before performing this operation,Veuillez sélectionner au moins une donnée pour effectuer cette opération,この操作を行う場合は、少なくとも一つのデータを選択してください。,이작업을수행할때최소한하나의데이터를선택하십시오,"При выполнении этой операции, пожалуйста, выберите хотя бы Один файл","Por favor, seleccione al menos un dato para realizar esta operación","Bitte wählen sie mindestens eine datei, um diese operation durchzuführen","Por favor, selecione pelo menos um dado ao realizar esta operação",Pilih setidaknya satu data untuk melakukan operasi ini,انتقِ a على الأقل
+table.sort.select_field,选择字段,選擇欄位,Select field,Sélectionner un champ,フィールドを選択,필드 선택,Выбрать поле,Seleccionar campo,Feld auswählen,Selecionar campo,Pilih kolom,اختر الحقل
+table.sort.not_field,暂无排序字段,暫無排序欄位,No sort fields,Aucun champ de tri,並び替えフィールドなし,정렬 필드 없음,Нет полей сортировки,Sin campos de orden,Keine Sortierfelder,Sem campos de ordenação,Tidak ada kolom pengurutan,لا توجد حقول فرز
+tree.base,基本信息,基本信息,Basic information,Les informations essentielles,基本情報,기본정보,Основная информация.,La información básica,Elementarste informationen.,A informação básica,Informasi dasar,المعلومات الأساسية
+tree.update,更新,更新,Update,Mise à jour,更新,업데이트,обновля,actualización,Aktualisiert.,actualização,update,تحديث
+tree.add_button,新增,新增,Add,nouveaux,追加,새로추가,нов,nuevos,hinzufügen,nova,baru,الإضافية
+tree.add,保存,增加,Add,La conservation,増加,증가,сохран,guardar,Intakt?,conservação,simpan,حفظ
+tree.add_children,增加下级,增加下級,Add subordinate,Ajouter un sous-niveau,部下を増やす,하급자증가,Увеличить нижний уровень.,Añadir un subnivel,Junior high.,Adicionar um sub-nível,Meningkatkan junior,زيادة الرتب الدنيا
+tree.delete,删除,刪除,Delete,supprimé,削除,삭제,удал,borrar,Löschen.,apagar,hapus,حذف
+tree.validate.no_this_parent,不可以选择自己作为父级,不可以選擇自己作為父級,You cannot choose yourself as a parent,Vous ne pouvez pas vous sélectionner comme parent,自分を父親として選んではいけません。,부모로서자신을선택할수없습니다,Я не могу выбирать себя в качестве отца,No se puede seleccionar como padre,Du darfst dir das leben nicht zum vater aussuchen,Não é possível escolher-se como pai,Jangan memilih dirimu sebagai orang tua,لا يمكنك اختيار نفسك كأب
+tree.validate.no_this_children_parent,不可以选择自己的子级作为父级,不可以選擇自己的子級作為父級,You cannot select your own child as the parent,Vous ne pouvez pas choisir votre propre enfant comme parent,自分のサブを父親として選んではいけません。,자신의하위레벨을부모레벨로선택할수없습니다,Не может быть выбора собственного сына в качестве отца,No es posible seleccionar su propio hijo como padre,Man darf sich die eigene teilklasse als vater nicht aussuchen,Não é possível selecionar seu próprio filho como pai,Jangan memilih anakmu sendiri sebagai ayahmu,لا يمكنك اختيار مستوى الابن كأب
+change-pwd.original_password,原始密码,原始密碼,Original password,Le mot de passe original,元のパスワード,원본비밀번호,Оригинальный код.,La contraseña original,Der ursprüngliche code.,A senha original,Sandi asli,كلمة المرور الأصلية
+change-pwd.new_password,新密码,新密碼,New password,Nouveau mot de passe,新しいパスワードです,새 비밀번호,Новый пароль.,Una nueva contraseña,Neuer code.,Nova palavra-passe,Kata sandi baru,رمز جديد
+change-pwd.confirm_password,确认密码,確認密碼,Confirm password,Confirmer le mot de passe,パスワードを確認する,비밀번호확인,Подтвердите код.,Confirme su contraseña,Passwort bestätigt.,Confirme a senha,Konfirmasi sandi,تأكيد كلمة المرور
+change-pwd.validate.original_password,请输入原始密码！,請輸入原始密碼！,Please enter original password!,Veuillez entrer le mot de passe original!,オリジナルのパスワードを入力してください。,원본암호를입력하십시오!,Введите оригинальный код!,Por favor ingrese la contraseña original!,Bitte den originalcode eingeben!,"Por favor, insira a senha original!",Mohon masukkan kode asli!,يرجى إدخال كلمة المرور الأصلية!
+change-pwd.validate.length-sex,密码至少六位,密碼至少六位,Password at least six digits,Mot de passe d’au moins six caractères,パスワードは少なくとも六桁です,비밀번호는최소6자리,Пароль минимум шесть цифр,Contraseña con al menos seis dígitos,Das passwort mindestens sechs,Senha com pelo menos seis dígitos,Kata sandi setidaknya enam digit,لا يقل عن ستة كلمات مرور
+change-pwd.validate.height,强度：强,強度：強,strength：height,Force: fort,強度:強い,강도강함,Сила: сила,Fuerza: fuerte,Stärke: stark,Força: forte,Intensitas: kuat,القوة: قوي
+change-pwd.validate.middle,强度：中,強度：中,strength：middle,Intensité: moyen,強度:,강도중,Интенсивность:,Intensidad: medio,Intensität: dr + Mark,Força: médio,Intensitas: sedang,القوة:
+change-pwd.validate.low,强度：太短,強度：太短,strength：low,Force: trop courte,強度:短すぎる,강도너무짧음,Слишком коротко,Fuerza: demasiado corto,Stärke: zu kurz,Força: muito curto,Intensitas: terlalu pendek,القوة: قصيرة جدا
+change-pwd.validate.text,请至少输入6个字符。请不要使用容易被猜到的密码。,請至少輸入6個字符。請不要使用容易被猜到的密碼。,Please enter at least 6 characters.Do not use easily guessed passwords.,Veuillez saisir au moins 6 caractères. Veuillez ne pas utiliser de mots de passe facilement devinables.,少なくとも6文字を入力してください。当てやすいパスワードは使わないでください。,최소6자를입력하십시오.쉽게맞힐수있는비밀번호를사용하지마십시오.,"Пожалуйста, введите хотя бы шесть символов. Пожалуйста, не используй пароль, который легко догадаться.","Por favor, introduzca al menos 6 caracteres. Por favor, no utilice contraseñas fáciles de adivinar.",Geben sie mindestens 6 zeichen ein! Bitte benutzen sie nicht das erraten einfache passwort.,"Por favor insira pelo menos 6 caracteres. Por favor, não use senhas fáceis de adivinhar.",Silahkan masukkan setidaknya 6 karakter. Tolong jangan gunakan kata sandi yang mudah ditebak.,يرجى إدخال 6 أحرف على الأقل. من فضلك لا تستخدم كلمة مرور يسهل تخميرها.
+change-pwd.validate.confirm_password,请确认密码！,請確認密碼！,Please confirm password!,Veuillez confirmer le mot de passe!,パスワードを確認してください,비밀번호를확인하세요!,"Пожалуйста, подтвердите код!",Por favor confirme la contraseña!,Bitte ihr passwort bestätigen!,"Por favor, confirme a senha!",Tolong konfirmasi passwordnya!,يرجى تأكيد كلمة المرور!
+change-pwd.validate.password_not_match,两次输入的密码不匹配！,兩次輸入的密碼不匹配！,The two passwords entered do not match!,Les mots de passe entrés deux fois ne correspondent pas!,二回入力したパスワードが一致しません。,두번입력한비밀번호가일치하지않습니다!,Два входных пароля не совпадают!,¡Las contraseñas introducidas dos veces no coinciden!,Der code stimmt nicht überein.,As senhas digitadas duas vezes não correspondem!,Dua kali masukkan password yang tidak cocok!,كلمة المرور التي دخلت مرتين لا تتطابق!
+login.account_pwd_login,账户密码登录,賬戶密碼登錄,Account Password Login,Connexion par mot de passe,アカウントパスワードログイン,계정비밀번호로그인,Вход по паролю аккаунта.,Inicio de sesión por contraseña de cuenta,Login mit passwort,Login com senha da conta,Masuk dengan kata sandi akun,تسجيل الدخول بكلمة مرور الحساب
+login.account,用户名,用戶名,Username,Nom de l’utilisateur,ユーザ名,사용자이름,Имя пользователя.,Nombre de usuario,benutzername,Nome de usuário,Nama pengguna,اسم المستخدم
+login.validate.account,请输入账户名！,請輸入賬戶名！,Please enter your username!,Veuillez entrer le nom du compte!,アカウント名を入力してください。,계정이름을입력하세요!,"Введите имя счета, пожалуйста!",Por favor ingrese el nombre de la cuenta!,Bitte geben sie einen kontonamen ein!,Digite o nome da conta!,Silahkan masukkan nama akun!,يرجى إدخال اسم الحساب!
+login.pwd,密码,密碼,Password,Les mots de passe,パスワード,비밀번호,код,La contraseña,kennwort,senha,kode,كلمة المرور
+login.validate.pwd,请输入密码！,請輸入密碼！,Please enter the password!,Veuillez entrer le code!,パスワードを入力してください,비밀번호를입력하세요!,"Введите код, пожалуйста!","Por favor, introduzca el código!",Bitte geben sie ihr passwort ein.,Por favor insira o código!,Tolong masukkan kodenya!,يرجى إدخال كلمة المرور!
+login.validate_code,验证码,驗證碼,Verification code,Code de vérification,認証コード,인증코드,Код подтверждения.,Código de verificación,Authentifizierungscode:,Código de verificação,captcha,رمز التحقق
+login.button,登录,登錄,Login,connexion,ログイン,로그인,залогин,inicio,Einloggen.,autenticação,Log masuk,تسجيل الدخول
+login.register,注册,註冊,Register,l’enregistrement,登録する,등록,зарегистрирова,El registro,Eine liste ausfüllen.,De registo,pendaftaran,تسجيل
+login.forget_pwd,忘记密码？,忘記密碼？,Forget Password?,Mot de passe oublié?,パスワードを忘れますか？,비밀번호를잊어버렸어요?,Забыл пароль?,¿Olvidó su contraseña?,Du hast die kombination vergessen?,Esqueceu sua senha?,Lupa kata sandi?,نسيت كلمة المرور؟
+login.forget_pwd_hint,请联系管理员,請聯系管理員,Please contact the administrator,Veuillez contacter l’administrateur,管理者に連絡してください,관리자에게연락하세요,Свяжитесь с администратором.,Por favor contacte al administrador,Kontaktiere den administrator.,Entre em contato com o administrador,Silahkan hubungi administrator,يرجى الاتصال المسؤول
+setting.config,页面设置,頁面設置,Page config,Configuration de page,ページの設定,페이지설정,Настройка страницы.,Configuración de página,seiteneinstellungen,Configuração da página,Pengaturan halaman,إعداد الصفحة
+setting.fixed-header,固定头和侧边栏,固定頭和側邊欄,Fixed Header & Nav,Tête fixe et sidebar,고정헤드와사이드바,고정헤드와사이드바,Закрепи голову и боковую панель,Cabeza fija y barra lateral,Kopf und seitentüren,Cabeçalho fixo e barra lateral,Amankan kepala dan batang sisi,تثبيت الرأس والأعمدة الجانبية
+setting.tab-reuse,多页签,多頁簽,Multiple tabs,Plusieurs onglets de page,何枚かのくじです,다중 탭,Подпиши несколько страниц.,Múltiples pestañas,Signatur? - ja.,Várias guias de página,Tanda tangan banyak halaman,صفحات عديدة
+setting.nav,面包屑导航,面包屑導航,Breadcrumb nav,Navigation sur breadcrumb,パン粉ナビゲーション,빵부스러기내비게이션,Навигация по хлебным крошкам,Navegación por breadcrumb,Klein wie brot.,Navegação por breadcrumb,Navigasi remah roti,فتات الخبز الملاحة
+setting.table-border,表格边框,表格邊框,Table bordered,Bordure de table,表の境界線,표테두리,Табличная боковая рама,Borde de tabla,Tabelle im rahmen,Borda da tabela,Batas tabel,إطار الجدول
+setting.color-weak,色弱模式,色弱模式,Color weak mode,Mode faible couleur,色弱モードです,색약 패턴,Слабая модель цвета,Modo débil de color,Das zerstörerische muster,Modo fraco da cor,Pola afektif,وضع ضعيف
+setting.color-gray,灰色模式,灰色模式,Grey mode,Le mode gris,グレーパターンです ,그레이 모드,Серая модель.,Andamento grigio,Das graue muster.,O modo cinzento,Mode abu,الوضع الرمادي
+setting.dark,夜间模式,夜間模式,Dark mode,Le mode nuit,ナイトモード,야간모드,Ночной режим,Modo nocturno,Die nachtmodus.,Modo de noite,Mode malam,الوضع الليلي
+setting.clear-cache,清理本地缓存,清理本地緩存,Clear Local Cache,Nettoyer votre cache local,로컬캐시지우기,로컬캐시청소,Очистка местного кэша,Limpiar el caché local,Räumen sie den lokalen bereich auf,Limpar o cache local,Bersihkan tembolok lokal,تنظيف التخزين المؤقت المحلي
+setting.clear,清理,清理,Clear,nettoyage,整理する,청소,очист,limpieza,Reinigen.,limpar,membersihkan,تنظيف
+setting.confirm,确认要清理所有的本地缓存吗？,確認要清理所有的本地緩存嗎？,Are you sure you want to clean up all local caches?,Confirmez que vous voulez nettoyer tout votre cache local?,全てのローカルキャッシュをクリアしますか？,로컬캐시를모두청소하시겠습니까?,Подтверждаю.,Confirma que quieres limpiar todo el caché local?,"Sind sie sicher, dass sie alle lokalen konten löschen möchten?",Confirma que queres limpar todo o cache local?,Konfirmasi untuk membersihkan semua tembolok lokal?,هل تم التأكيد على تنظيف جميع التخزين المؤقت المحلية؟
+login_expire.tip,登录状态已过期，您可以继续留在该页面，或者重新登录？,登錄狀態已過期，您可以繼續留在該頁面，或者重新登錄？,Login status has expired. Can you stay on the page or log in again?,Le statut de connexion a expiré. Pouvez-vous rester sur cette page ou vous reconnecter?,ログイン状態が失効しました。このページに残してもいいですか？それとも再登録してもいいですか？,로그인상태가만료되었습니다.이페이지에계속머무르거나다시로그인할수있습니까?,"Регистрация просрочена, вы можете остаться на странице или повторно войти?",El estado de inicio de sesión ha expirado. ¿Puede permanecer en la página o volver a iniciar sesión?,Die anmeldung ist abgelaufen. Können sie sich anmelden Oder noch mal anmelden?,O status de login expirou. Você pode permanecer nesta página ou fazer login novamente?,"Status login telah habis, dan anda dapat tetap di halaman tersebut, atau masuk kembali?",لقد انتهت صلاحية تسجيل الدخول، يمكنك البقاء في الصفحة أو إعادة تسجيل الدخول؟
+login_expire.retry,重新登录,重新登錄,login again,Connectez-vous de nouveau,再登録,다시로그인,Перезагрузка.,Volver a iniciar sesión,Und wieder einloggen.,Entrar novamente,Masuk kembali,إعادة تسجيل الدخول
+none_permission,无权限！,無權限！,Without permission!,Aucune autorisation!,権限がありません,권한이없습니다!,Нет!,¡Sin permiso!,Kein zutritt!,Sem autorização!,Tidak ada akses!,بدون تصريح
+theme.default,默认主题,默認主題,Default theme,Thème par défaut,デフォルトテーマ,기본 테마,По умолчанию.,Tema por defecto,Standardthema:,Tema por padrão,Tema standar,الموضوع الافتراضي
+theme.dark,黑夜主题,黑夜主題,Dark theme,Thème nuit noire,夜のテーマです,어두운 테마,♪ тема ночи ♪,Tema de noche,Das dunkle thema,Tema da noite,Tema malam,موضوع الليل
+theme.compact,紧凑主题,緊湊主題,Compact theme,Un thème compact,コンパクトなテーマです,주제를 잘 정리하다,Компактный предмет,Tema compacto,Ein neues thema.,Um tema compacto,Tema padat,موضوع ضيق
+notice.center,通知中心,通知中心,Notification Center,Centre de notifications,通知センター,알림 센터,Центр уведомлений,Centro de notificaciones,Benachrichtigungszentrum,Centro de Notificações,Pusat Pemberitahuan,مركز الإشعارات
+tenant.login,租户登录,租戶登入,Tenant Login,Connexion du locataire,テナントログイン,테넌트 로그인,Вход арендатора,Inicio del inquilino,Mieter-Login,Login do inquilino,Masuk penyewa,تسجيل دخول المستأجر
+notice,通知,通知,Notice,Avis,お知らせ,공지,Уведомление,Aviso,Hinweis,Aviso,Pemberitahuan,إشعار
+notice.announcement,公告,公告,Announcement,Annonce,お知らせ,공지,Объявление,Anuncio,Bekanntmachung,Anúncio,Pengumuman,إعلان
+notice.unread,未读,未讀,Unread,Non lu,未読,읽지 않음,Непрочитанное,No leído,Ungelesen,Não lido,Belum Dibaca,غير مقروء
+notice.readAll,全部已读,全部已讀,Mark All as Read,Tout marquer comme lu,すべて既読にする,모두 읽음으로 표시,Отметить все как прочитанное,Marcar todo como leído,Alle als gelesen markieren,Marcar tudo como lido,Tandai Semua Sebagai Dibaca,وضع علامة على الكل كمقروء
+notice.confirm.title,确认操作,確認操作,Confirm Operation,Confirmer l'opération,操作を確認,작업 확인,Подтвердить операцию,Confirmar operación,Vorgang bestätigen,Confirmar Operação,Konfirmasi Operasi,تأكيد العملية
+notice.confirm.readAll,确认要将所有通知标记为已读吗？,確認要將所有通知標記為已讀嗎？,Are you sure you want to mark all notifications as read?,Êtes-vous sûr de vouloir marquer toutes les notifications comme lues?,すべての通知を既読にしますか？,모든 알림을 읽음으로 표시하시겠습니까?,Вы уверены, что хотите отметить все уведомления как прочитанные?,¿Está seguro de que desea marcar todas las notificaciones como leídas?,Möchten Sie wirklich alle Benachrichtigungen als gelesen markieren?,Tem certeza de que deseja marcar todas as notificações como lidas?,Apakah Anda yakin ingin menandai semua notifikasi sebagai dibaca?,هل أنت متأكد من أنك تريد وضع علامة على جميع الإشعارات كمقروءة؟
+global.previous_page,上一页,上一頁,Previous Page,Page précédente,前のページ,이전 페이지,Предыдущая страница,Página anterior,Vorherige Seite,Página anterior,Halaman Sebelumnya,الصفحة السابقة
+global.next_page,下一页,下一頁,Next Page,Page suivante,次のページ,다음 페이지,Следующая страница,Página siguiente,Nächste Seite,Próxima página,Halaman Berikutnya,الصفحة التالية
+TODAY,今天,今天,Today,Aujourd'hui,今日,오늘,Сегодня,Hoy,Heute,Hoje,Hari ini,اليوم
+FEW_DAYS,过去 N 天,過去 N 天,Past N days,Les N derniers jours,過去N日間,지난 N일,Последние N дней,Últimos N días,Letzte N Tage,Últimos N dias,N hari terakhir,الأيام N الماضية
+FUTURE_DAYS,未来 N 天,未來 N 天,Next N days,Les N prochains jours,今後N日間,향후 N일,Следующие N дней,Próximos N días,Nächste N Tage,Próximos N dias,N hari ke depan,الأيام N القادمة
+BETWEEN,区间,區間,Range,Intervalle,範囲,범위,Диапазон,Rango,Bereich,Intervalo,Rentang,نطاق
+GT,大于,大於,Greater than,Supérieur à,より大きい,보다 큰,Больше чем,Mayor que,Größer als,Maior que,Lebih besar dari,أكبر من
+LT,小于,小於,Less than,Inférieur à,より小さい,보다 작은,Меньше чем,Menor que,Kleiner als,Menor que,Kurang dari,أقل من
+EGT,大于等于,大於等於,Greater than or equal,Supérieur ou égal à,以上,이상,Больше или равно,Mayor o igual que,Größer gleich,Maior ou igual a,Lebih besar atau sama dengan,أكبر من أو يساوي
+ELT,小于等于,小於等於,Less than or equal,Inférieur ou égal à,以下,이하,Меньше или равно,Menor o igual que,Kleiner gleich,Menor ou igual a,Kurang dari atau sama dengan,أقل من أو يساوي
+NULL,为空,為空,Is null,Est nul,空である,널임,Пусто,Es nulo,Ist null,É nulo,Kosong,فارغ
+NOT_NULL,非空,非空,Not null,Non nul,空でない,널이 아님,Не пусто,No es nulo,Nicht null,Não é nulo,Tidak kosong,ليس فارغا
+EQ,等于,等於,Equal,Égal à,等しい,같음,Равно,Igual a,Gleich,Igual a,Sama dengan,يساوي
+NEQ,不等于,不等於,Not equal,Différent de,等しくない,같지 않음,Не равно,No igual a,Ungleich,Diferente de,Tidak sama dengan,لا يساوي
+LIKE,相似,相似,Similar,Similaire,類似,유사,Похожий,Similar,Ähnlich,Semelhante,Mirip,مشابه
+NOT_LIKE,不相似,不相似,Not similar,Pas similaire,類似していない,유사하지 않음,Не похожий,No similar,Nicht ähnlich,Não semelhante,Tidak mirip,غير مشابه
+START_WITH,以**开始,以**開始,Starts with,Commence par,で始まる,로 시작,Начинается с,Empieza con,Beginnt mit,Começa com,Dimulai dengan,يبدأ ب
+END_WITH,以**结尾,以**結尾,Ends with,Se termine par,で終わる,로 끝남,Заканчивается на,Termina en,Endet mit,Termina com,Berakhir dengan,ينتهي ب
+IN,包含于,包含於,Contains,Contient,含まれる,포함,Содержит,Contiene,Enthält,Contém,Mengandung,يحتوي على
+NOT_IN,不包含于,不包含於,Not contains,Ne contient pas,含まれない,포함하지 않음,Не содержит,No contiene,Enthält nicht,Não contém,Tidak mengandung,لا يحتوي على
+
+print.preview,打印预览,列印預覽,Print Preview,Aperçu avant impression,印刷プレビュー,인쇄 미리보기,Предпросмотр печати,Vista previa de impresión,Druckvorschau,Pré-visualizar impressão,Pratinjau Cetak,معاينة الطباعة
+
+[flow]
+VIEW_FLOW,查看流程,檢視流程,View Flow,Voir le flux,フローを見る,플로우 보기,Просмотр потока,Ver flujo,Fluss anzeigen,Ver fluxo,Lihat Aliran,عرض التدفق
+key,zh-CN,zh-TW,en-US,fr-FR,ja-JP,ko-KR,ru-RU,es-ES,de-DE,pt-PT,id-ID,ar-SA
+START,发起流程,發起流程,Start Process,Démarrer le processus,プロセスを開始,프로세스 시작,Начать процесс,Iniciar proceso,Prozess starten,Iniciar processo,Mulai Proses,بدء العملية
+USER_APPROVAL,或签审批,或簽審批,Sequential Approval,Approbation Séquentielle,順次承認,순차 승인,Последовательное утверждение,Aprobación Secuencial,Sequentielle Genehmigung,Aprovação Sequencial,Persetujuan Berurutan,الموافقة التسلسلية
+USER_APPROVAL_PARALLEL,会签审批,會簽審批,Parallel Approval,Approbation Parallèle,並列承認,병렬 승인,Параллельное утверждение,Aprobación Paralela,Parallele Genehmigung,Aprovação Paralela,Persetujuan Paralel,الموافقة المتوازية
+CC,抄送,副本,CC,Cc,CC,참조,Копия,CC,CC,CC,CC,نسخة
+
+PRE_SIGN,前加签,前加簽,Pre-sign,Pré-signature,事前署名,사전 서명,Предварительная подпись,Firma previa,Vorunterschrift,Pré-assinatura,Tanda tangan awal,التوقيع المسبق
+POST_SIGN,后加签,後加簽,Post-sign,Post-signature,事後署名,사후 서명,Последующая подпись,Firma posterior,Nachunterschrift,Pós-assinatura,Tanda tangan akhir,التوقيع اللاحق
+FINISH,已完成,已完成,Finished,Terminé,完了,완료,Завершено,Finalizado,Abgeschlossen,Concluído,Selesai,منتهي
+WITHDRAWN,已撤回,已撤回,Withdrawn,Retiré,撤回,철회됨,Отозвано,Retirado,Zurückgezogen,Retirado,Ditarik,مسحوب
+ROLLBACK,已回退,已回退,Rolled back,Rétour,ロールバック됨,롤백됨,Откат,Revertido,Zurückgesetzt,Revertido,Dikembalikan,تم التراجع
+DELETED,已删除,已刪除,Deleted,Supprimé,削除,삭제됨,Удалено,Eliminado,Gelöscht,Excluído,Dihapus,محذوف
+TERMINATED,已终止,已終止,Terminated,Terminé,強制終了,종료됨,Прервано,Terminado,Beendet,Terminado,Dihentikan,منتهي
+REVOKED,已撤销,已撤銷,Revoked,Révoqué,取消,취소됨,Аннулировано,Revocado,Widerrufen,Revogado,Dicabut,ملغى
+TRANSFER,已转交,已轉交,Transferred,Transféré,転送済み,전송됨,Передано,Transferido,Übertragen,Transferido,Transfer,تم النقل
+TIMEOUT_AUTO_PASS,超时自动通过,逾時自動通過,Auto pass on timeout,Passer automatiquement en cas de délai d'attente,タイムアウト時に自動承認,시간 초과 시 자동 승인,Автоматическое подтверждение по истечении времени,Autorizar automáticamente al alcanzar el tiempo de espera,Automatische Genehmigung nach Zeitablauf,Aprovação automática ao atingir o tempo limite,Setujui otomatis saat waktu habilit,تجاوز تلقائي عند انتهاء المهلة
+TIMEOUT_AUTO_REJECT,超时自动拒绝,逾時自動拒絕,Auto reject on timeout,Rejeter automatiquement en cas de délai d'attente,タイムアウト時に自動拒否,시간 초과 시 자동 거부,Автоматический отказ по истечении времени,Rechazar automáticamente al alcanzar el tiempo de espera,Automatische Ablehnung nach Zeitablauf,Rejeição automática ao atingir o tempo limite,Tolak otomatis saat waktu habilit,رفض تلقائي عند انتهاء المهلة
+
+
+PENDING,审批中,審批中,Pending,En attente,審査中,대기 중,На рассмотрении,Pendiente,Ausstehend,Pendente,Menunggu,قيد الانتظار
+AGREED,已同意,已同意,Agreed,Accepté,同意,동의됨,Принято,Acertado,Aprovado,Acertado,Diterima,تم الموافقة
+REJECTED,已拒绝,已拒絕,Rejected,Rejeté,拒否,거부됨,Отклонено,Rechazado,Abgelehnt,Rejeitado,Ditolak,مرفوض
+SKIPPED,已跳过,已跳過,Skipped,Sautéé,跳過,건너뛰어짐,Пропущено,Saltado,Lewati,Dipulihkan,Lewati,لقد قفزت
+
+NEXT,成功,成功,Success,Succès,成功,성공,Успех,Éxito,Erfolg,Sucesso,Sukses,نجاح
+WAIT,等待执行,等待執行,Waiting,En attente,待機 중,대기 중,Ожидание,Esperando,Warten,Aguardando,Menunggu,في الانتظار
+WAIT_API_TRIGGER,等待审批,等待審批,Waiting for approval,En attente d'approbation,承認待ち,승인 대기 중,Ожидание подтверждения,Esperando aprobación,Warten auf Genehmigung,Aguardando aprovação,Menunggu persetujuan,في انتظار الموافقة
+ERROR,执行错误,執行錯誤,Execution error,Erreur d'exécution,実行エラー,실행 오шибка,Ошибка выполнения,Error de ejecución,Ausführungsfehler,Erro de execução,Kesalahan eksekusi,خطأ في التنفيذ
+REENTRY,重试中,重試中,Retrying,Recommencement,再試行 중,재시도 중,Повтор,Reintentando,Wiederholen,Repetindo,Mencoba lagi,إعادة المحاولة
+END,结束,結束,End,Fin,終了,끝,Конец,Fin,Ende,Fim,Akhir,نهاية
+
+SUB_FLOW,子流程,子流程,Sub Flow,Sous-flux,サブフロー,서브 플로,Подпоток,Subflujo,Subflow,Subfluxo,Sub Alur,التدفق الفرعي
+FLOW_TODO,待办,待辦,Todo,À faire,やること,할 일,Сделать,Por hacer,Machen,Fazer,Yang harus dilakukan,للقيام
+FLOW_DONE,已办,已辦,Done,Fait,完了,완료,Выполнено,Hecho,Erledigt,Concluído,Selesai,تم
+CREATED,已创建,已創建,Created,Créé,作成済,생성됨,Создано,Creado,Erstellt,Criado,Dibuat,تم الإنشاء
+CC,抄送我,抄送我,CC Me,Me mettre en CC,私にCC,나에게 참조,Отправить копию мне,CC a mí,CC mich,CC para mim,CC saya,نسخة لي
+ASSIGNEE,办理,辦理,Assignee,Assigné,担当者,담당자,Исполнитель,Asignado,Zuständiger,Responsável,Penanggung jawab,المكلف
+
+ORG,组织,組織,Organization,Organisation,組織,조직,Организация,Organización,Organisation,Organização,Organisasi,منظمة
+USER,用户,用戶,User,Utilisateur,ユーザー,사용자,Пользователь,Usuario,Benutzer,Utilizador,Pengguna,مستخدم
+POST,岗位,崗位,Position,Poste,ポスト,직위,Должность,Puesto,Position,Cargo,Jabatan,منصب
+ROLE,角色,角色,Role,Rôle,ロール,역할,Роль,Rol,Rolle,Função,Peran,دور
+ORG_HEAD,组织负责人,組織負責人,Organization Head,Responsable de l'organisation,組織責任者,조직 책임자,Руководитель организации,Jefe de organización,Organisationsleiter,Chefe da organização,Kepala Organisasi,رئيس المنظمة
+DIVISION_LEADER,分管领导,分管領導,Division Leader,Chef de division,分担リーダー,분할 리더,Руководитель подразделения,Líder de división,Abteilungsleiter,Líder de divisão,Pemimpin Divisi,زعيم القسم
+SPECIFIED_USER,指定人员,指定人員,Specified Users,Personnes spécifiées,指定された人,지정된 사용자,Указанные лица,Personas especificadas,Spezifizierte Personen,Pessoas especificadas,Pengguna Tertentu,الأشخاص المحددون
+SELF_SELECT,发起人自选,发起人自選,Self-select by initiator,Choix par l'initiateur,発信者による自選,기안자 자율 선택,Самостоятельный выбор инициатором,Selección propia del iniciador,Selbstwahl durch den Initiator,Auto-seleção pelo iniciador,Pilih sendiri oleh inisiator,الاختيار الذاتي من قبل المبادر
+NODE_ASSIGNED,由其他节点指定,由其他節點指定,Assigned by other nodes,Assigné par d'autres nœuds,他のノードによって指定,다른 노드에 의해 지정됨,Назначено другими узлами,Asignado por otros nodos,Von anderen Knoten zugewiesen,Atribuído por outros nós,Ditugaskan oleh simpul lain,مخصص من قبل عقد أخرى
+SUBMITTER_HIMSELF,提交人本人,提交人本人,Submitter himself,Le soumissionnaire lui-même,提出者本人,제출자 본인,Сам заявитель,El propio remitente,Einreicher selbst,O próprio remetente,Pengirim itu sendiri,المقدم نفسه
+DIRECT_ORG_HEAD,直属组织负责人,直屬組織負責人,Direct Organization Head,Responsable direct de l'organisation,直属組織責任者,직속 조직 책임자,Непосредственный руководитель организации,Jefe de organización directa,Direkter Organisationsleiter,Chefe direto da organização,Kepala Organisasi Langsung,رئيس المنظمة المباشر
+flow.node_select,节点选择,節點選擇,Node Selection,Sélection de nœud,ノード選択,노드 선택,Выбор узла,Selección de nodo,Knotenauswahl,Seleção de nó,Pemilihan Simpul,اختيار العقدة
+flow.permission_scopes,人员范围,人員範圍,Permission Scopes,Périmètres de permission,権限範囲,권한 범위,Сферы полномочий,Ámbitos de permiso,Berechtigungsbereiche,Escopos de permissão,Cakupan Izin,نطاقات الإذن
+flow.submitter_of,提交人的,提交人的,Submitter of,Soumetteur de,提出者の,제출자의,Отправитель de,Remitente de,Einreicher von,Remetente de,Penyerah dari,مقدم من
+
+[ai]
+ai.chat.sessions,会话,會話,Chats,Conversations,チャット,대화,Чаты,Conversaciones,Chats,Conversas,Percakapan,المحادثات
+ai.chat.collapse_sidebar,收起侧边栏,收起側邊欄,Collapse sidebar,Réduire le panneau,サイドバーを閉じる,사이드바 접기,Свернуть панель,Cerrar panel,Seitenleiste schließen,Recolher painel,Sembunyikan panel,طي الشريط الجانبي
+ai.chat.expand_sidebar,展开侧边栏,展開側邊欄,Expand sidebar,Développer le panneau,サイドバーを開く,사이드바 펼치기,Развернуть панель,Abrir panel,Seitenleiste öffnen,Expandir painel,Tampilkan panel,توسيع الشريط الجانبي
+ai.chat.empty_title,开始一段对话,開始一段對話,Start a conversation,Commencer une conversation,会話を始めましょう,대화를 시작해보세요,Начните разговор,Iniciar una conversación,Gespräch beginnen,Iniciar uma conversa,Mulai percakapan,ابدأ محادثة
+ai.chat.empty_hint,在下方输入内容，AI 将为你解答,在下方輸入內容，AI 將為你解答,Type below and AI will respond,Tapez ci-dessous pour commencer,下に入力してAIが回答します,아래에 입력하면 AI가 답변합니다,Введите запрос ниже,Escribe abajo para comenzar,Unten eingeben für KI-Antwort,Digite abaixo para começar,Ketik di bawah untuk memulai,اكتب أدناه وسيرد الذكاء الاصطناعي
+ai.chat.new_session,新建会话,新建會話,New Chat,Nouvelle conversation,新しいチャット,새 대화,Новый чат,Nueva conversación,Neuer Chat,Nova conversa,Percakapan baru,محادثة جديدة
+ai.chat.more_actions,更多操作,更多操作,More actions,Plus d'actions,その他の操作,더 많은 작업,Ещё действия,Más acciones,Weitere Aktionen,Mais ações,Tindakan lainnya,المزيد من الإجراءات
+ai.chat.rename,重命名,重新命名,Rename,Renommer,名前を変更,이름 바꾸기,Переименовать,Renombrar,Umbenennen,Renomear,Ubah nama,إعادة التسمية
+ai.chat.delete,删除,刪除,Delete,Supprimer,削除,삭제,Удалить,Eliminar,Löschen,Excluir,Hapus,حذف
+ai.chat.load_more,加载更多...,加載更多...,Load more...,Charger plus...,もっと読み込む...,더 불러오기...,Загрузить ещё...,Cargar más...,Mehr laden...,Carregar mais...,Muat lebih...,تحميل المزيد...
+ai.chat.thinking_process,思考过程,思考過程,Thinking process,Processus de réflexion,思考プロセス,사고 과정,Процесс мышления,Proceso de pensamiento,Denkprozess,Processo de pensamento,Proses berpikir,عملية التفكير
+ai.chat.thinking,思考中...,思考中...,Thinking...,En train de réfléchir...,考え中...,생각 중...,Думает...,Pensando...,Denkt...,Pensando...,Sedang berpikir...,جارٍ التفكير...
+ai.chat.agent,智能体：,智能體：,Agent:,Agent :,エージェント：,에이전트:,Агент:,Agente:,Agent:,Agente:,Agen:,الوكيل:
+ai.chat.agent_unspecified,不指定,不指定,Unspecified,Non spécifié,指定なし,지정 안 함,Не указан,Sin especificar,Nicht angegeben,Não especificado,Tidak ditentukan,غير محدد
+ai.chat.auto_tool_call,自动工具调用：,自動工具調用：,Auto tool call:,Appel d'outil auto :,自動ツール呼び出し：,자동 도구 호출:,Авто вызов инструмента:,Llamada automática:,Auto-Tool-Aufruf:,Chamada automática:,Panggilan alat otomatis:,استدعاء أداة تلقائي:
+ai.chat.stop_generation,停止生成,停止生成,Stop generating,Arrêter la génération,生成を停止,생성 중지,Остановить генерацию,Detener generación,Generierung stoppen,Parar geração,Hentikan pembuatan,إيقاف الإنشاء
+ai.chat.stop,停止,停止,Stop,Arrêter,停止,정지,Стоп,Parar,Stopp,Parar,Hentikan,إيقاف
+ai.chat.clear_input,清空输入,清空輸入,Clear input,Effacer la saisie,入力をクリア,입력 지우기,Очистить ввод,Borrar entrada,Eingabe leeren,Limpar entrada,Hapus input,مسح الإدخال
+ai.chat.exit_fullscreen,退出全屏,退出全螢幕,Exit fullscreen,Quitter le plein écran,フルスクリーン終了,전체 화면 종료,Выйти из полноэкранного,Salir de pantalla completa,Vollbild verlassen,Sair da tela cheia,Keluar layar penuh,الخروج من ملء الشاشة
+ai.chat.fullscreen,全屏,全螢幕,Fullscreen,Plein écran,フルスクリーン,전체 화면,Полный экран,Pantalla completa,Vollbild,Tela cheia,Layar penuh,ملء الشاشة
+ai.chat.input_placeholder,输入聊天内容...,輸入聊天內容...,Type a message...,Saisissez un message...,メッセージを入力...,메시지 입력...,Введите сообщение...,Escribe un mensaje...,Nachricht eingeben...,Digite uma mensagem...,Ketik pesan...,اكتب رسالة...
+ai.chat.shortcut_hint,↵ 发送 / ⌘ + ↵ 换行,↵ 發送 / ⌘ + ↵ 換行,↵ Send / ⌘ + ↵ New line,↵ Envoyer / ⌘ + ↵ Nouvelle ligne,↵ 送信 / ⌘ + ↵ 改行,↵ 전송 / ⌘ + ↵ 줄바꿈,↵ Отправить / ⌘ + ↵ Новая строка,↵ Enviar / ⌘ + ↵ Nueva línea,↵ Senden / ⌘ + ↵ Neue Zeile,↵ Enviar / ⌘ + ↵ Nova linha,↵ Kirim / ⌘ + ↵ Baris baru,↵ إرسال / ⌘ + ↵ سطر جديد
+ai.chat.send,发送,發送,Send,Envoyer,送信,전송,Отправить,Enviar,Senden,Enviar,Kirim,إرسال
+ai.chat.rename_placeholder,请输入新的会话名称,請輸入新的會話名稱,Enter new session name,Entrez un nouveau nom,新しい名前を入力,새 이름 입력,Введите новое название,Ingrese nuevo nombre,Neuen Namen eingeben,Digite novo nome,Masukkan nama baru,أدخل اسمًا جديدًا
+ai.chat.delete_confirm_title,确认删除,確認刪除,Confirm delete,Confirmer la suppression,削除を確認,삭제 확인,Подтвердить удаление,Confirmar eliminación,Löschen bestätigen,Confirmar exclusão,Konfirmasi hapus,تأكيد الحذف
+ai.chat.delete_confirm_content,确定要删除该会话吗？删除后无法恢复。,確定要刪除該會話嗎？刪除後無法恢復。,Are you sure to delete this session? It cannot be recovered.,Confirmer la suppression de cette conversation ?,このセッションを削除しますか？元に戻せません。,이 세션을 삭제하시겠습니까？복구할 수 없습니다。,Вы уверены что хотите удалить этот чат? Восстановить невозможно.,¿Seguro que desea eliminar esta conversación?,Möchten Sie diese Unterhaltung löschen?,Tem certeza que deseja excluir esta conversa?,Yakin ingin menghapus sesi ini?,هل أنت متأكد من حذف هذه المحادثة؟
+ai.chat.rename_modal_title,重命名会话,重命名會話,Rename session,Renommer la conversation,セッションの名前を変更,세션 이름 변경,Переименовать чат,Renombrar conversación,Unterhaltung umbenennen,Renomear conversa,Ubah nama sesi,إعادة تسمية المحادثة
+ai.chat.rename_empty_error,会话名称不能为空,會話名稱不能為空,Session name cannot be empty,Le nom ne peut pas être vide,名前を入力してください,이름을 입력하세요,Название не может быть пустым,El nombre no puede estar vacío,Name darf nicht leer sein,O nome não pode estar vazio,Nama tidak boleh kosong,لا يمكن أن يكون الاسم فارغًا
+ai.chat.rename_success,重命名成功,重命名成功,Renamed successfully,Renommé avec succès,名前を変更しました,이름 변경 성공,Переименовано успешно,Renombrado con éxito,Erfolgreich umbenannt,Renomeado com sucesso,Berhasil diubah nama,تمت إعادة التسمية بنجاح
+ai.chat.deleted,已删除,已刪除,Deleted,Supprimé,削除しました,삭제되었습니다,Удалено,Eliminado,Gelöscht,Excluído,Dihapus,تم الحذف
+ai.chat.stopped,(已停止),(已停止),(Stopped),(Arrêté),(停止済み),(중지됨),(Остановлено),(Detenido),(Gestoppt),(Parado),(Dihentikan),(توقف)
+
+[cube]
+cube.dashboard.config.bg_color,背景颜色,背景顏色,Background color,Couleur de fond,背景色,배경색,Цвет фона,Color de fondo,Hintergrundfarbe,Cor de fundo,Warna latar,لون الخلفية
+cube.dashboard.config.bg_image,背景图 (URL),背景圖 (URL),Background image (URL),Image de fond (URL),背景画像 (URL),배경 이미지 (URL),Фоновое изображение (URL),Imagen de fondo (URL),Hintergrundbild (URL),Imagem de fundo (URL),Gambar latar (URL),صورة الخلفية (URL)
+cube.dashboard.config.theme,主题,主題,Theme,Thème,テーマ,테마,Тема,Tema,Thema,Tema,Tema,السمة
+cube.dashboard.config.theme_light,明亮,明亮,Light,Clair,ライト,라이트,Светлый,Claro,Hell,Claro,Terang,فاتح
+cube.dashboard.config.theme_dark,暗黑,暗黑,Dark,Sombre,ダーク,다크,Тёмный,Oscuro,Dunkel,Escuro,Gelap,داكن
+cube.dashboard.config.auto_refresh,"自动刷新间隔 (秒, 0=不刷新)","自動刷新間隔 (秒, 0=不刷新)",Auto refresh interval (s),Intervalle de rafraîchissement (s),自動更新間隔 (秒),자동 새로고침 간격 (초),Интервал обновления (с),Intervalo de actualización (s),Aktualisierungsintervall (s),Intervalo de atualização (s),Interval refresh (detik),فترة التحديث (ث)
+cube.dashboard.config.gap,报表间距 (px),報表間距 (px),Report gap (px),Espacement (px),レポート間隔 (px),보고서 간격 (px),Отступ (px),Espacio (px),Abstand (px),Espaço (px),Jarak laporan (px),فجوة التقرير (px)
+cube.dashboard.query,查询,查詢,Query,Requête,クエリ,조회,Запрос,Consulta,Abfrage,Consultar,Kueri,استعلام
+cube.dashboard.publish_hint,发布后，当前草稿配置将同步到正式视图。,發布後，當前草稿配置將同步到正式視圖。,After publishing the draft will sync to the live view.,Après publication la configuration sera synchronisée.,公開後にドラフト設定が本番ビューに同期されます。,게시 후 현재 초안 구성이 정식 뷰에 동기화됩니다.,После публикации черновик будет применён.,Tras publicar la configuración del borrador se sincronizará.,Nach der Veröffentlichung wird der Entwurf synchronisiert.,Após publicar a configuração do rascunho será sincronizada.,Setelah dipublikasikan konfigurasi akan disinkronkan.,بعد النشر سيتم مزامنة مسودة الإعداد مع العرض الرسمي.
+cube.dashboard.publish_desc_placeholder,修改说明,修改說明,Change description,Description des modifications,変更説明,변경 설명,Описание изменения,Descripción del cambio,Änderungsbeschreibung,Descrição da alteração,Deskripsi perubahan,وصف التغيير
+cube.dashboard.history.desc,修改说明,修改說明,Change description,Description,変更説明,변경 설명,Описание,Descripción,Beschreibung,Descrição,Deskripsi,الوصف
+cube.dashboard.history.publisher,发布人,發布人,Publisher,Éditeur,公開者,게시자,Издатель,Editor,Herausgeber,Editor,Penerbit,الناشر
+cube.dashboard.history.publish_time,发布时间,發布時間,Publish time,Date de publication,公開日時,게시 시간,Время публикации,Fecha de publicación,Veröffentlichungszeit,Hora de publicação,Waktu publikasi,وقت النشر
+cube.dashboard.history.action,操作,操作,Action,Action,操作,작업,Действие,Acción,Aktion,Ação,Tindakan,إجراء
+cube.dashboard.history.no_desc,无说明,無說明,No description,Aucune description,説明なし,설명 없음,Без описания,Sin descripción,Keine Beschreibung,Sem descrição,Tanpa deskripsi,بلا وصف
+cube.dashboard.history.rollback,回滚,回滾,Rollback,Revenir,ロールバック,롤백,Откат,Revertir,Zurücksetzen,Reverter,Kembalikan,التراجع
+cube.dashboard.publish_confirm,确定要发布吗？,確定要發布嗎？,Are you sure to publish?,Confirmer la publication ?,公開してよろしいですか？,게시하시겠습니까?,Вы уверены что хотите опубликовать?,¿Seguro que desea publicar?,Möchten Sie wirklich veröffentlichen?,Tem certeza que deseja publicar?,Yakin ingin mempublikasikan?,هل أنت متأكد من النشر؟
+cube.dashboard.publish_success,发布成功,發布成功,Published successfully,Publié avec succès,公開しました,게시 성공,Опубликовано,Publicado con éxito,Erfolgreich veröffentlicht,Publicado com sucesso,Berhasil dipublikasikan,تم النشر بنجاح
+cube.dashboard.history_title,发布历史,發布歷史,Publish history,Historique de publication,公開履歴,게시 기록,История публикаций,Historial de publicaciones,Veröffentlichungsverlauf,Histórico de publicação,Riwayat publikasi,سجل النشر
+cube.dashboard.rollback_confirm,确定要回滚到该版本吗？,確定要回滾到該版本嗎？,Are you sure to rollback to this version?,Confirmer le retour à cette version ?,このバージョンに戻しますか？,이 버전으로 롤백하시겠습니까?,Вы уверены что хотите откатить к этой версии?,¿Seguro que desea revertir a esta versión?,Möchten Sie auf diese Version zurücksetzen?,Tem certeza que deseja reverter para esta versão?,Yakin ingin mengembalikan ke versi ini?,هل أنت متأكد من التراجع إلى هذا الإصدار؟
+cube.dashboard.rollback_content_prefix,回滚后，当前的草稿配置将被覆盖为：,回滾後，當前的草稿配置將被覆蓋為：,After rollback the draft will be overridden by: ,Après retour le brouillon sera remplacé par : ,ロールバック後のドラフト: ,롤백 후 현재 초안이 다음으로 대체됩니다: ,После отката черновик будет перезаписан: ,Tras revertir el borrador será reemplazado por: ,Nach dem Zurücksetzen wird der Entwurf ersetzt durch: ,Após reverter o rascunho será sobrescrito por: ,Setelah rollback konfigurasi akan diganti dengan: ,بعد التراجع سيتم استبدال المسودة بـ:
+cube.dashboard.rollback_success,回滚成功,回滾成功,Rolled back successfully,Retour en arrière réussi,ロールバックしました,롤백 성공,Откат выполнен,Revertido con éxito,Zurückgesetzt,Revertido com sucesso,Berhasil di-rollback,تم التراجع بنجاح
+cube.dashboard.copy_confirm,确定要复制吗,確定要複製嗎,Are you sure to copy?,Confirmer la copie ?,コピーしますか？,복사하시겠습니까?,Вы уверены что хотите скопировать?,¿Seguro que desea copiar?,Möchten Sie wirklich kopieren?,Tem certeza que deseja copiar?,Yakin ingin menyalin?,هل أنت متأكد من النسخ؟
+cube.dashboard.copy_success,复制成功,複製成功,Copied successfully,Copié avec succès,コピーしました,복사 성공,Скопировано,Copiado con éxito,Erfolgreich kopiert,Copiado com sucesso,Berhasil disalin,تم النسخ بنجاح
+cube.report.current_filter,当前筛选:,當前篩選:,Current filters:,Filtres actifs:,現在のフィルター:,현재 필터:,Текущие фильтры:,Filtros actuales:,Aktuelle Filter:,Filtros atuais:,Filter aktif:,المرشحات الحالية:
+cube.report.clear_all,清除全部,清除全部,Clear all,Effacer tout,すべてクリア,전체 삭제,Очистить всё,Borrar todo,Alle löschen,Limpar tudo,Hapus semua,مسح الكل
+cube.report.config.basic,基础配置,基礎配置,Basic config,Configuration de base,基本設定,기본 설정,Базовая настройка,Configuración básica,Grundkonfiguration,Configuração básica,Konfigurasi dasar,الإعداد الأساسي
+cube.report.config.title,标题,標題,Title,Titre,タイトル,제목,Заголовок,Título,Titel,Título,Judul,العنوان
+cube.report.config.desc,描述,描述,Description,Description,説明,설명,Описание,Descripción,Beschreibung,Descrição,Deskripsi,الوصف
+cube.report.config.desc_placeholder,请输入描述信息,請輸入描述信息,Please enter a description,Veuillez entrer une description,説明を入力してください,설명을 입력하세요,Введите описание,Por favor ingrese una descripción,Bitte Beschreibung eingeben,Por favor insira uma descrição,Silakan masukkan deskripsi,يرجى إدخال وصف
+cube.report.config.chart_type,图表类型,圖表類型,Chart type,Type de graphique,グラフタイプ,차트 유형,Тип диаграммы,Tipo de gráfico,Diagrammtyp,Tipo de gráfico,Tipe grafik,نوع المخطط
+cube.report.config.basic_charts,基础图表,基礎圖表,Basic charts,Graphiques de base,基本グラフ,기본 차트,Базовые диаграммы,Gráficos básicos,Grunddiagramme,Gráficos básicos,Grafik dasar,الرسوم البيانية الأساسية
+cube.report.config.chart.line,折线图,折線圖,Line chart,Graphique en lignes,折れ線グラフ,꺾은선형,Линейный график,Gráfico de líneas,Liniendiagramm,Gráfico de linhas,Grafik garis,مخطط خطي
+cube.report.config.chart.area,面积图,面積圖,Area chart,Graphique en aires,面積グラフ,영역 차트,Диаграмма с областями,Gráfico de área,Flächendiagramm,Gráfico de área,Grafik area,مخطط منطقة
+cube.report.config.chart.column,柱状图,柱狀圖,Column chart,Graphique en colonnes,縦棒グラフ,막대형,Гистограмма,Gráfico de columnas,Säulendiagramm,Gráfico de colunas,Grafik kolom,مخطط أعمدة
+cube.report.config.chart.bar,条形图,條形圖,Bar chart,Graphique en barres,横棒グラフ,가로 막대형,Барная диаграмма,Gráfico de barras,Balkendiagramm,Gráfico de barras,Grafik batang,مخطط شريطي
+cube.report.config.chart.pie,饼图,餅圖,Pie chart,Graphique circulaire,円グラフ,원형,Круговая диаграмма,Gráfico circular,Kreisdiagramm,Gráfico de pizza,Grafik pai,مخطط دائري
+cube.report.config.advanced_charts,进阶图表,進階圖表,Advanced charts,Graphiques avancés,高度なグラフ,고급 차트,Расширенные диаграммы,Gráficos avanzados,Erweiterte Diagramme,Gráficos avançados,Grafik lanjutan,الرسوم البيانية المتقدمة
+cube.report.config.chart.scatter,散点图,散點圖,Scatter chart,Nuage de points,散布図,분산형,Точечная диаграмма,Gráfico de dispersión,Streudiagramm,Gráfico de dispersão,Grafik sebar,مخطط مبعثر
+cube.report.config.chart.bubble,气泡图,氣泡圖,Bubble chart,Graphique à bulles,バブルチャート,버블형,Пузырьковая диаграмма,Gráfico de burbuja,Blasendiagramm,Gráfico de bolha,Grafik gelembung,مخطط فقاعي
+cube.report.config.chart.radar,雷达图,雷達圖,Radar chart,Graphique radar,レーダーチャート,방사형,Радарная диаграмма,Gráfico de radar,Netzdiagramm,Gráfico de radar,Grafik radar,مخطط رادار
+cube.report.config.chart.funnel,漏斗图,漏斗圖,Funnel chart,Graphique en entonnoir,ファネルチャート,깔때기형,Воронкообразная диаграмма,Gráfico de embudo,Trichterdiagramm,Gráfico de funil,Grafik corong,مخطط قمعي
+cube.report.config.chart.gauge,仪表盘,儀表盤,Gauge chart,Jauge,ゲージチャート,게이지형,Диаграмма-спидометр,Gráfico de medidor,Tachometerdiagramm,Gráfico de medidor,Grafik pengukur,مقياس
+cube.report.config.chart.waterfall,瀑布图,瀑布圖,Waterfall chart,Graphique en cascade,ウォーターフォールチャート,폭포형,Каскадная диаграмма,Gráfico de cascada,Wasserfalldiagramm,Gráfico cascata,Grafik air terjun,مخطط شلال
+cube.report.config.chart.rose,玫瑰图,玫瑰圖,Rose chart,Graphique en rose,ローズチャート,장미형,Розовая диаграмма,Gráfico de rosa,Rosendiagramm,Gráfico de rosa,Grafik rose,مخطط وردي
+cube.report.config.chart.radial_bar,玉玦图,玉玦圖,Radial bar chart,Graphique radial,放射状棒グラフ,방사형 막대,Радиальная диаграмма,Gráfico de barras radial,Radiales Balkendiagramm,Gráfico de barras radial,Grafik batang radial,مخطط شريطي شعاعي
+cube.report.config.relation_charts,关系/特殊图表,關係/特殊圖表,Relation/Special charts,Graphiques relationnels,リレーション/特殊グラフ,관계/특수 차트,Реляционные диаграммы,Gráficos relacionales,Beziehungsdiagramme,Gráficos relacionais,Grafik relasi,الرسوم البيانية العلائقية
+cube.report.config.chart.chord,和弦图,和弦圖,Chord chart,Graphique en corde,コードチャート,코드형,Аккордовая диаграмма,Gráfico de acorde,Sehnendiagramm,Gráfico de acorde,Grafik chord,مخطط وتري
+cube.report.config.chart.word_cloud,词云图,詞雲圖,Word cloud,Nuage de mots,ワードクラウド,워드 클라우드,Облако слов,Nube de palabras,Wortwolke,Nuvem de palavras,Awan kata,سحابة كلمات
+cube.report.config.mini_charts,迷你图,迷你圖,Sparklines,Mini-graphiques,ミニグラフ,스파크라인,Мини-графики,Mini gráficos,Minidiagramme,Mini gráficos,Grafik mini,رسوم مصغرة
+cube.report.config.chart.tiny_line,迷你折线图,迷你折線圖,Tiny line,Mini ligne,ミニ折れ線グラフ,미니 꺾은선형,Мини-линия,Mini línea,Mini-Linie,Mini linha,Mini garis,خط مصغر
+cube.report.config.chart.tiny_area,迷你面积图,迷你面積圖,Tiny area,Mini aire,ミニ面積グラフ,미니 영역,Мини-площадь,Mini área,Mini-Fläche,Mini área,Mini area,منطقة مصغرة
+cube.report.config.chart.tiny_column,迷你柱状图,迷你柱狀圖,Tiny column,Mini colonne,ミニ縦棒グラフ,미니 막대형,Мини-столбец,Mini columna,Mini-Säule,Mini coluna,Mini kolom,عمود مصغر
+cube.report.config.chart.progress,进度条,進度條,Progress bar,Barre de progression,プログレスバー,진행 막대,Прогресс-бар,Barra de progreso,Fortschrittsbalken,Barra de progresso,Bilah kemajuan,شريط التقدم
+cube.report.config.chart.ring_progress,进度环,進度環,Ring progress,Anneau de progression,プログレスリング,진행 링,Кольцо прогресса,Anillo de progreso,Fortschrittsring,Anel de progresso,Cincin kemajuan,حلقة التقدم
+cube.report.config.other_charts,其他,其他,Others,Autres,その他,기타,Другие,Otros,Andere,Outros,Lainnya,أخرى
+cube.report.config.chart.pivot_table,透视表,透視表,Pivot table,Tableau croisé,ピボットテーブル,피벗 테이블,Сводная таблица,Tabla dinámica,Pivot-Tabelle,Tabela dinâmica,Tabel pivot,جدول محوري
+cube.report.config.chart.table,表格,表格,Table,Tableau,テーブル,테이블,Таблица,Tabla,Tabelle,Tabela,Tabel,جدول
+cube.report.config.dimension,维度,維度,Dimension,Dimension,ディメンション,차원,Измерение,Dimensión,Dimension,Dimensão,Dimensi,البُعد
+cube.report.config.measure,指标,指標,Measure,Mesure,メジャー,지표,Показатель,Medida,Kennzahl,Medida,Ukuran,المقياس
+cube.report.config.row_field,行字段,行字段,Row field,Champ de ligne,行フィールド,행 필드,Поле строки,Campo de fila,Zeilenfeld,Campo de linha,Field baris,حقل الصف
+cube.report.config.row_field_placeholder,选择行字段,選擇行字段,Select row field,Sélectionner le champ de ligne,行フィールドを選択,행 필드 선택,Выберите поле строки,Seleccionar campo de fila,Zeilenfeld auswählen,Selecionar campo de linha,Pilih field baris,اختر حقل الصف
+cube.report.config.col_field,列字段,列字段,Column field,Champ de colonne,列フィールド,열 필드,Поле столбца,Campo de columna,Spaltenfeld,Campo de coluna,Field kolom,حقل العمود
+cube.report.config.col_field_placeholder,选择列字段,選擇列字段,Select column field,Sélectionner le champ de colonne,列フィールドを選択,열 필드 선택,Выберите поле столбца,Seleccionar campo de columna,Spaltenfeld auswählen,Selecionar campo de coluna,Pilih field kolom,اختر حقل العمود
+cube.report.config.value_field,值字段,值字段,Value field,Champ de valeur,値フィールド,값 필드,Поле значения,Campo de valor,Wertefeld,Campo de valor,Field nilai,حقل القيمة
+cube.report.config.value_field_placeholder,选择值字段,選擇值字段,Select value field,Sélectionner le champ de valeur,値フィールドを選択,값 필드 선택,Выберите поле значения,Seleccionar campo de valor,Wertefeld auswählen,Selecionar campo de valor,Pilih field nilai,اختر حقل القيمة
+cube.report.config.source_field,来源字段,來源字段,Source field,Champ source,ソースフィールド,소스 필드,Поле источника,Campo de origen,Quellfeld,Campo de origem,Field sumber,حقل المصدر
+cube.report.config.target_field,目标字段,目標字段,Target field,Champ cible,ターゲットフィールド,대상 필드,Поле назначения,Campo de destino,Zielfeld,Campo de destino,Field target,حقل الهدف
+cube.report.config.weight_field,权重字段,權重字段,Weight field,Champ de poids,重みフィールド,가중치 필드,Поле веса,Campo de peso,Gewichtsfeld,Campo de peso,Field bobot,حقل الوزن
+cube.report.config.measure2,指标2,指標2,Measure 2,Mesure 2,メジャー2,지표2,Показатель 2,Medida 2,Kennzahl 2,Medida 2,Ukuran 2,المقياس 2
+cube.report.config.size_field,尺寸字段,尺寸字段,Size field,Champ de taille,サイズフィールド,크기 필드,Поле размера,Campo de tamaño,Größenfeld,Campo de tamanho,Field ukuran,حقل الحجم
+cube.report.config.series_field,分组字段,分組字段,Group field,Champ de groupe,グループフィールド,그룹 필드,Поле группы,Campo de grupo,Gruppenfeld,Campo de grupo,Field grup,حقل المجموعة
+cube.report.config.sort,排序,排序,Sort,Tri,ソート,정렬,Сортировка,Ordenar,Sortierung,Ordenar,Pengurutan,الترتيب
+cube.report.config.add,添加,添加,Add,Ajouter,追加,추가,Добавить,Agregar,Hinzufügen,Adicionar,Tambahkan,إضافة
+cube.report.config.sort_field_placeholder,排序字段,排序字段,Sort field,Champ de tri,ソートフィールド,정렬 필드,Поле сортировки,Campo de ordenación,Sortierfeld,Campo de ordenação,Field pengurutan,حقل الترتيب
+cube.report.config.sort.asc,升序,升序,Ascending,Croissant,昇順,오름차순,По возрастанию,Ascendente,Aufsteigend,Crescente,Naik,تصاعدي
+cube.report.config.sort.desc,降序,降序,Descending,Décroissant,降順,내림차순,По убыванию,Descendente,Absteigend,Decrescente,Turun,تنازلي
+cube.report.config.data_source,数据源,數據源,Data source,Source de données,データソース,데이터 소스,Источник данных,Fuente de datos,Datenquelle,Fonte de dados,Sumber data,مصدر البيانات
+cube.report.config.main_model,主模型（默认）,主模型（預設）,Main model (default),Modèle principal (défaut),メインモデル（デフォルト）,주 모델(기본),Основная модель (по умолчанию),Modelo principal (predeterminado),Hauptmodell (Standard),Modelo principal (padrão),Model utama (default),النموذج الرئيسي (الافتراضي)
+cube.report.config.custom,自定义配置,自定義配置,Custom config,Configuration personnalisée,カスタム設定,사용자 정의 설정,Пользовательские настройки,Configuración personalizada,Benutzerdefinierte Konfiguration,Configuração personalizada,Konfigurasi kustom,الإعداد المخصص
+cube.report.config.font_size,字体大小,字體大小,Font size,Taille de police,フォントサイズ,글꼴 크기,Размер шрифта,Tamaño de fuente,Schriftgröße,Tamanho da fonte,Ukuran font,حجم الخط
+cube.report.config.text_color,文本颜色,文本顏色,Text color,Couleur du texte,テキスト色,글자 색,Цвет текста,Color de texto,Textfarbe,Cor do texto,Warna teks,لون النص
+cube.report.config.smooth_curve,平滑曲线,平滑曲線,Smooth curve,Courbe lissée,スムーズ曲線,부드러운 곡선,Сглаженная кривая,Curva suavizada,Glatte Kurve,Curva suavizada,Kurva halus,منحنى ناعم
+cube.report.config.step_line,阶梯折线图,階梯折線圖,Step line,Ligne en escalier,ステップ折れ線グラフ,계단형 꺾은선,Ступенчатая линия,Línea escalonada,Treppenliniendiagramm,Linha escalonada,Garis bertahap,خط متدرج
+cube.report.config.inner_radius,内环半径,內環半徑,Inner radius,Rayon intérieur,内径,내부 반지름,Внутренний радиус,Radio interior,Innenradius,Raio interno,Radius dalam,نصف القطر الداخلي
+cube.report.config.stacked,堆叠图,堆疊圖,Stacked,Empilé,積み上げ,누적형,Накопленная,Apilado,Gestapelt,Empilhado,Ditumpuk,مكدّس
+cube.report.config.percentage,百分比模式,百分比模式,Percentage mode,Mode pourcentage,パーセントモード,퍼센트 모드,Режим процентов,Modo porcentaje,Prozentualer Modus,Modo percentual,Mode persentase,وضع النسبة المئوية
+cube.report.config.show_label,显示数值标签,顯示數值標籤,Show value labels,Afficher les étiquettes,数値ラベルを表示,값 레이블 표시,Показать метки значений,Mostrar etiquetas de valor,Wertemarkierungen anzeigen,Mostrar rótulos de valor,Tampilkan label nilai,إظهار تسميات القيم
+cube.report.config.legend_position,图例位置,圖例位置,Legend position,Position de la légende,凡例の位置,범례 위치,Положение легенды,Posición de la leyenda,Position der Legende,Posição da legenda,Posisi legenda,موضع وسيلة الإيضاح
+cube.report.config.legend.top,顶部,頂部,Top,Haut,上部,상단,Вверху,Arriba,Oben,Topo,Atas,أعلى
+cube.report.config.legend.bottom,底部,底部,Bottom,Bas,下部,하단,Внизу,Abajo,Unten,Parte inferior,Bawah,أسفل
+cube.report.config.legend.left,左侧,左側,Left,Gauche,左側,왼쪽,Слева,Izquierda,Links,Esquerda,Kiri,يسار
+cube.report.config.legend.right,右侧,右側,Right,Droite,右側,오른쪽,Справа,Derecha,Rechts,Direita,Kanan,يمين
+cube.report.config.legend.top_left,左上,左上,Top left,Haut gauche,左上,좌상단,Вверху слева,Arriba izquierda,Oben links,Canto superior esquerdo,Kiri atas,أعلى يسار
+cube.report.config.legend.top_right,右上,右上,Top right,Haut droite,右上,우상단,Вверху справа,Arriba derecha,Oben rechts,Canto superior direito,Kanan atas,أعلى يمين
+cube.report.config.legend.bottom_left,左下,左下,Bottom left,Bas gauche,左下,좌하단,Внизу слева,Abajo izquierda,Unten links,Canto inferior esquerdo,Kiri bawah,أسفل يسار
+cube.report.config.legend.bottom_right,右下,右下,Bottom right,Bas droite,右下,우하단,Внизу справа,Abajo derecha,Unten rechts,Canto inferior direito,Kanan bawah,أسفل يمين
+cube.report.config.slider,缩略轴 (Slider),縮略軸 (Slider),Slider,Curseur,スライダー,슬라이더,Слайдер,Control deslizante,Schieberegler,Controle deslizante,Penggeser,شريط تمرير
+cube.report.config.scrollbar,滚动条 (Scrollbar),滾動條 (Scrollbar),Scrollbar,Barre de défilement,スクロールバー,스크롤바,Полоса прокрутки,Barra de desplazamiento,Scrollbalken,Barra de rolagem,Bilah gulir,شريط التمرير
+cube.report.config.aux_config,辅助配置,輔助配置,Auxiliary config,Configuration auxiliaire,補助設定,보조 설정,Вспомогательные настройки,Configuración auxiliar,Hilfskonfiguration,Configuração auxiliar,Konfigurasi tambahan,الإعداد المساعد
+cube.report.config.hide_x_axis,隐藏X轴,隱藏X軸,Hide X axis,Masquer l'axe X,X軸を非表示,X축 숨기기,Скрыть ось X,Ocultar eje X,X-Achse ausblenden,Ocultar eixo X,Sembunyikan sumbu X,إخفاء المحور X
+cube.report.config.hide_y_axis,隐藏Y轴,隱藏Y軸,Hide Y axis,Masquer l'axe Y,Y軸を非表示,Y축 숨기기,Скрыть ось Y,Ocultar eje Y,Y-Achse ausblenden,Ocultar eixo Y,Sembunyikan sumbu Y,إخفاء المحور Y
+cube.report.config.hide_tooltip,隐藏提示信息,隱藏提示信息,Hide tooltip,Masquer l'infobulle,ツールチップを非表示,툴팁 숨기기,Скрыть всплывающую подсказку,Ocultar información emergente,Tooltip ausblenden,Ocultar dica de ferramenta,Sembunyikan tooltip,إخفاء تلميح الأداة
+cube.report.config.color_palette,自定义色板,自定義色板,Custom color palette,Palette de couleurs,カスタムカラーパレット,사용자 색상 팔레트,Пользовательская палитра,Paleta de colores personalizada,Benutzerdefinierte Farbpalette,Paleta de cores personalizada,Palet warna kustom,لوحة الألوان المخصصة
+cube.report.config.color_placeholder,输入颜色值并按回车,輸入顏色值並按回車,Enter color value and press Enter,Entrer une valeur de couleur,色の値を入力しEnterを押してください,색상 값을 입력하고 Enter 키를 누르세요,Введите значение цвета и нажмите Enter,Ingrese el valor del color y presione Enter,Farbwert eingeben und Enter drücken,Insira o valor da cor e pressione Enter,Masukkan nilai warna dan tekan Enter,أدخل قيمة اللون واضغط Enter
+cube.report.config.color.blue,蓝色,藍色,Blue,Bleu,青,파란색,Синий,Azul,Blau,Azul,Biru,أزرق
+cube.report.config.color.green,绿色,綠色,Green,Vert,緑,초록색,Зелёный,Verde,Grün,Verde,Hijau,أخضر
+cube.report.config.color.gray,灰色,灰色,Gray,Gris,グレー,회색,Серый,Gris,Grau,Cinza,Abu-abu,رمادي
+cube.report.config.color.yellow,黄色,黃色,Yellow,Jaune,黄色,노란색,Жёлтый,Amarillo,Gelb,Amarelo,Kuning,أصفر
+cube.report.config.color.orange,橙色,橙色,Orange,Orange,オレンジ,주황색,Оранжевый,Naranja,Orange,Laranja,Oranye,برتقالي
+cube.report.config.color.light_blue,浅蓝,淺藍,Light blue,Bleu clair,ライトブルー,하늘색,Голубой,Azul claro,Hellblau,Azul claro,Biru muda,أزرق فاتح
+cube.report.config.color.purple,紫色,紫色,Purple,Violet,紫,보라색,Фиолетовый,Morado,Lila,Roxo,Ungu,بنفسجي
+cube.report.config.color.light_orange,浅橙,淺橙,Light orange,Orange clair,ライトオレンジ,연주황,Светло-оранжевый,Naranja claro,Hellorange,Laranja claro,Oranye muda,برتقالي فاتح
+cube.report.config.color.cyan,青色,青色,Cyan,Cyan,シアン,청록색,Циан,Cian,Cyan,Ciano,Sian,سماوي
+cube.report.config.color.pink,粉色,粉色,Pink,Rose,ピンク,분홍색,Розовый,Rosa,Pink,Rosa,Merah muda,وردي
+cube.filter.config.hidden,隐藏,隱藏,Hidden,Masquer,非表示,숨김,Скрыть,Ocultar,Ausblenden,Ocultar,Sembunyikan,إخفاء
+cube.filter.config.linkage,联动字段,聯動字段,Linked field,Champ lié,連動フィールド,연동 필드,Связанное поле,Campo vinculado,Verknüpftes Feld,Campo vinculado,Field terkait,الحقل المرتبط
+cube.filter.config.linkage_placeholder,请选择联动字段,請選擇聯動字段,Please select linked field,Sélectionner le champ lié,連動フィールドを選択,연동 필드 선택,Выберите связанное поле,Seleccionar campo vinculado,Verknüpftes Feld auswählen,Selecionar campo vinculado,Pilih field terkait,اختر الحقل المرتبط
+cube.filter.control.select_linkage_first,请先选择联动项: ,請先選擇聯動項: ,Please select linked field first: ,Veuillez d'abord sélectionner le champ lié : ,先に連動フィールドを選択してください: ,연동 항목을 먼저 선택하세요: ,Сначала выберите связанное поле: ,Primero seleccione el campo vinculado: ,Zuerst verknüpftes Feld auswählen: ,Primeiro selecione o campo vinculado: ,Pilih item terkait terlebih dahulu: ,الرجاء تحديد الحقل المرتبط أولاً:
+cube.drill.export,导出,導出,Export,Exporter,エクスポート,내보내기,Экспорт,Exportar,Exportieren,Exportar,Ekspor,تصدير
+cube.dashboard.add_report,添加报表,添加報表,Add Report,Ajouter un rapport,レポート追加,보고서 추가,Добавить отчёт,Agregar informe,Bericht hinzufügen,Adicionar relatório,Tambah laporan,إضافة تقرير
+cube.dashboard.edit_report,编辑报表,編輯報表,Edit Report,Modifier le rapport,レポート編集,보고서 편집,Редактировать отчёт,Editar informe,Bericht bearbeiten,Editar relatório,Edit laporan,تعديل التقرير
+cube.dashboard.add_filter,添加筛选,添加篩選,Add Filter,Ajouter un filtre,フィルター追加,필터 추가,Добавить фильтр,Agregar filtro,Filter hinzufügen,Adicionar filtro,Tambah filter,إضافة فلتر
+cube.dashboard.edit_filter,编辑筛选,編輯篩選,Edit Filter,Modifier le filtre,フィルター編集,필터 편집,Редактировать фильтр,Editar filtro,Filter bearbeiten,Editar filtro,Edit filter,تعديل الفلتر
+cube.dashboard.settings,看板设置,看板設置,Dashboard Settings,Paramètres du tableau,ダッシュボード設定,대시보드 설정,Настройки панели,Configuración del panel,Dashboard-Einstellungen,Configurações do painel,Pengaturan dasbor,إعدادات اللوحة
+cube.dashboard.history,历史版本,歷史版本,History,Historique,履歴,히스토리,История,Historial,Verlauf,Histórico,Riwayat,السجل
+cube.dashboard.publish,发布,發布,Publish,Publier,公開,게시,Опубликовать,Publicar,Veröffentlichen,Publicar,Publikasikan,نشر
+cube.dashboard.copy_link,复制链接,複製鏈接,Copy Link,Copier le lien,リンクをコピー,링크 복사,Копировать ссылку,Copiar enlace,Link kopieren,Copiar link,Salin tautan,نسخ الرابط
+ai.chat.copy,复制,複製,Copy,Copier,コピー,복사,Копировать,Copiar,Kopieren,Copiar,Salin,نسخ
+ai.chat.copied,已复制,已複製,Copied,Copié,コピーしました,복사됨,Скопировано,Copiado,Kopiert,Copiado,Tersalin,تم النسخ
+ai.chat.regenerate,重新生成,重新生成,Regenerate,Régénérer,再生成,재생성,Перегенерировать,Regenerar,Neu generieren,Regenerar,Buat ulang,إعادة الإنشاء
+ai.chat.think_expand,展开思考,展開思考,Show thinking,Afficher la réflexion,思考を展開,사고 펼치기,Развернуть мышление,Mostrar pensamiento,Denken anzeigen,Mostrar raciocínio,Tampilkan pemikiran,إظهار التفكير
+ai.chat.think_collapse,折叠思考,折疊思考,Hide thinking,Masquer la réflexion,思考を折りたたむ,사고 접기,Свернуть мышление,Ocultar pensamiento,Denken ausblenden,Ocultar raciocínio,Sembunyikan pemikiran,إخفاء التفكير
+ai.chat.edit_resend,编辑重发,編輯重發,Edit & Resend,Modifier et renvoyer,編集して再送,수정 후 재전송,Изменить и отправить,Editar y reenviar,Bearbeiten und senden,Editar e reenviar,Edit & kirim ulang,تعديل وإعادة إرسال
+ai.chat.quote,引用到输入框,引用到輸入框,Quote to input,Citer dans la saisie,引用して入力,입력창에 인용,Цитировать в ввод,Citar en entrada,In Eingabe zitieren,Citar na entrada,Kutip ke input,اقتبس في المدخل
+ai.chat.speak,朗读,朗讀,Read aloud,Lire à voix haute,読み上げる,읽어주기,Прочитать вслух,Leer en voz alta,Vorlesen,Ler em voz alta,Baca keras,قراءة بصوت عالٍ
+ai.chat.speak_stop,停止朗读,停止朗讀,Stop reading,Arrêter la lecture,読み上げ停止,읽기 중지,Остановить чтение,Detener lectura,Vorlesen stoppen,Parar leitura,Hentikan bacaan,إيقاف القراءة
+cube.filter.config.not_null,必填,必填,Required,Obligatoire,必須,필수,Обязательно,Obligatorio,Pflichtfeld,Obrigatório,Wajib diisi,مطلوب
+cube.filter.config.default_type,默认值类型,預設值類型,Default Type,Type par défaut,デフォルト型,기본값 유형,Тип по умолчанию,Tipo por defecto,Standardtyp,Tipo padrão,Tipe default,نوع الافتراضي
+cube.filter.config.relative_absolute,绝对时间,絕對時間,Absolute,Absolu,絶対時間,절대 시간,Абсолютное,Absoluto,Absolut,Absoluto,Absolut,مطلق
+cube.filter.config.relative_relative,相对时间,相對時間,Relative,Relatif,相対時間,상대 시간,Относительное,Relativo,Relativ,Relativo,Relatif,نسبي
+cube.filter.config.relative_past,最近,最近,Last,Dernier,最近,최근,Последние,Últimos,Letzte,Últimos,Terakhir,آخر
+cube.filter.config.relative_future,未来,未來,Next,Prochain,未来,미래,Следующие,Próximos,Nächste,Próximos,Berikutnya,التالية
+cube.filter.config.relative_days,天,天,Days,Jours,日,일,Дней,Días,Tage,Dias,Hari,أيام
+cube.filter.required_hint,请先填写必填筛选项,請先填寫必填篩選項目,Please fill in the required filter options first,Veuillez d'abord remplir les options de filtre obligatoires,必須のフィルター項目を先に入力してください,필수 필터 항목을 먼저 입력해 주세요,"Пожалуйста, сначала заполните обязательные параметры фильтра","Por favor, complete primero las opciones de filtro obligatorias",Bitte füllen Sie zuerst die erforderlichen Filteroptionen aus,"Por favor, preencha primeiro as opções de filtro obrigatórias",Silakan isi opsi filter yang wajib diisi terlebih dahulu,يرجى ملء خيارات التصفية المطلوبة أولاً
+cube.report.config.parameter,参数,參數,Parameter,Paramètre,パラメータ,파라미터,Параметр,Parámetro,Parameter,Parâmetro,Parameter,معامل
+cube.sub_model.manage,子模型管理,子模型管理,Sub-Model Management,Gestion des sous-modèles,サブモデル管理,서브 모델 관리,Управление подмоделями,Gestión de submodelos,Untermodell-Verwaltung,Gestão de submodelos,Manajemen sub-model,إدارة النماذج الفرعية
+cube.sub_model.add,添加子模型,添加子模型,Add Sub-Model,Ajouter un sous-modèle,サブモデル追加,서브 모델 추가,Добавить подмодель,Agregar submodelo,Untermodell hinzufügen,Adicionar submodelo,Tambah sub-model,إضافة نموذج فرعي
+cube.sub_model.edit,编辑子模型,編輯子模型,Edit Sub-Model,Modifier le sous-modèle,サブモデル編集,서브 모델 편집,Редактировать подмодель,Editar submodelo,Untermodell bearbeiten,Editar submodelo,Edit sub-model,تعديل النموذج الفرعي
+cube.sub_model.alias,别名,別名,Alias,Alias,エイリアス,별칭,Псевдоним,Alias,Alias,Alias,Alias,الاسم المستعار
+cube.sub_model.alias_placeholder,唯一标识，如 orders,唯一標識，如 orders,Unique identifier e.g. orders,Identifiant unique ex. orders,一意識別子（例: orders）,고유 식별자 (예: orders),Уникальный идентификатор (напр. orders),Identificador único ej. orders,Eindeutiger Bezeichner z.B. orders,Identificador único ex. orders,Pengenal unik misal orders,معرّف فريد مثل orders
+cube.sub_model.mappings,映射数,映射數,Mappings,Correspondances,マッピング数,매핑 수,Маппинги,Asignaciones,Zuordnungen,Mapeamentos,Pemetaan,عدد التعيينات
+cube.sub_model.field_mappings,字段映射,字段映射,Field Mappings,Correspondances de champs,フィールドマッピング,필드 매핑,Маппинг полей,Asignación de campos,Feldzuordnungen,Mapeamento de campos,Pemetaan field,تعيين الحقول
+cube.sub_model.mappings_hint,用于筛选与联动,用於篩選與聯動,Used for filtering and linkage,Utilisé pour le filtrage et la liaison,フィルタリングと連動に使用,필터링 및 연동에 사용,Используется для фильтрации и связи,Usado para filtrado y vinculación,Für Filterung und Verknüpfung,Usado para filtragem e vinculação,Digunakan untuk filter dan tautan,يستخدم للتصفية والربط
+cube.sub_model.main_field,主模型字段,主模型字段,Main model field,Champ du modèle principal,メインモデルフィールド,주 모델 필드,Поле основной модели,Campo del modelo principal,Hauptmodellfeld,Campo do modelo principal,Field model utama,حقل النموذج الرئيسي
+cube.sub_model.sub_field,子模型字段,子模型字段,Sub-model field,Champ du sous-modèle,サブモデルフィールド,서브 모델 필드,Поле подмодели,Campo del submodelo,Untermodellfeld,Campo do submodelo,Field sub-model,حقل النموذج الفرعي
+cube.sub_model.add_mapping,添加映射,添加映射,Add Mapping,Ajouter une correspondance,マッピング追加,매핑 추가,Добавить маппинг,Agregar asignación,Zuordnung hinzufügen,Adicionar mapeamento,Tambah pemetaan,إضافة تعيين
+cube.sub_model.search,搜索子模型,搜索子模型,Search sub-models,Rechercher des sous-modèles,サブモデルを検索,서브 모델 검색,Поиск подмоделей,Buscar submodelos,Untermodelle suchen,Pesquisar submodelos,Cari sub-model,البحث عن النماذج الفرعية
+cube.report.config.preset_filters,预定义条件,預定義條件,Preset Filters,Filtres prédéfinis,プリセット条件,사전 정의 조건,Предустановки,Filtros predefinidos,Vordefinierte Filter,Filtros predefinidos,Filter Prasetel,فلاتر مسبقة
+cube.report.config.filter_logic,筛选逻辑,篩選邏輯,Filter Logic,Logique de filtre,フィルターロジック,필터 로직,Логика фильтра,Lógica de filtro,Filterlogik,Lógica de filtro,Logika Filter,منطق التصفية
+cube.report.config.preset_conditions,筛选条件,篩選條件,Filter Conditions,Conditions de filtre,フィルター条件,필터 조건,Условия фильтра,Condiciones de filtro,Filterbedingungen,Condições de filtro,Kondisi Filter,شروط التصفية
+cube.report.config.filter_value_placeholder,请输入值,請輸入值,Enter value,Saisir une valeur,値を入力,값 입력,Введите значение,Ingrese un valor,Wert eingeben,Insira um valor,Masukkan nilai,أدخل قيمة
+cube.report.config.add_group,添加分组,添加分組,Add Group,Ajouter un groupe,グループ追加,그룹 추가,Добавить группу,Agregar grupo,Gruppe hinzufügen,Adicionar grupo,Tambah grup,إضافة مجموعة
+cube.report.config.apply_filters,应用条件,應用條件,Apply Filters,Appliquer les filtres,条件を適用,조건 적용,Применить фильтры,Aplicar filtros,Filter anwenden,Aplicar filtros,Terapkan filter,تطبيق الفلاتر
+cube.report.config.chart.treemap,树图,樹狀圖,Treemap,Carte arborescente,ツリーマップ,트리맵,Древовидная карта,Mapa de árbol,Baumkarte,Mapa de árvore,Treemap,خريطة الشجرة
+cube.report.config.chart.heatmap,热力图,熱力圖,Heatmap,Carte de chaleur,ヒートマップ,히트맵,Тепловая карта,Mapa de calor,Heatmap,Mapa de calor,Peta panas,خريطة الحرارة
+cube.report.config.chart.text,富文本,富文本,Rich Text,Texte enrichi,リッチテキスト,서식 있는 텍스트,Форматированный текст,Texto enriquecido,Rich Text,Texto rico,Teks kaya,نص منسق
+cube.report.config.color_field,颜色字段,顏色字段,Color Field,Champ couleur,カラーフィールド,색상 필드,Поле цвета,Campo de color,Farbfeld,Campo de cor,Bidang warna,حقل اللون
+cube.report.config.x_field,X 轴字段,X 軸字段,X Field,Champ X,X フィールド,X 필드,Поле X,Campo X,X-Feld,Campo X,Bidang X,حقل X
+cube.report.config.y_field,Y 轴字段,Y 軸字段,Y Field,Champ Y,Y フィールド,Y 필드,Поле Y,Campo Y,Y-Feld,Campo Y,Bidang Y,حقل Y
+cube.report.config.compare.title,时间对比,時間對比,Time Comparison,Comparaison temporelle,時間比較,시간 비교,Временное сравнение,Comparación temporal,Zeitvergleich,Comparação temporal,Perbandingan waktu,مقارنة زمنية
+cube.report.config.compare.enable,启用时间对比,啟用時間對比,Enable Comparison,Activer la comparaison,比較を有効化,비교 활성화,Включить сравнение,Activar comparación,Vergleich aktivieren,Ativar comparação,Aktifkan perbandingan,تفعيل المقارنة
+cube.report.config.compare.type,对比类型,對比類型,Comparison Type,Type de comparaison,比較タイプ,비교 유형,Тип сравнения,Tipo de comparación,Vergleichstyp,Tipo de comparação,Jenis perbandingan,نوع المقارنة
+cube.report.config.compare.yoy,同比（年）,同比（年）,YoY (Year),Comparaison annuelle,前年比（年）,전년 동기(연),Год к году,Año a año,Jahresvergleich,Ano a ano,Perbandingan tahunan,مقارنة سنوية
+cube.report.config.compare.mom,环比（月）,環比（月）,MoM (Month),Comparaison mensuelle,前月比（月）,전월 대비(월),Месяц к месяцу,Mes a mes,Monatsvergleich,Mês a mês,Perbandingan bulanan,مقارنة شهرية
+cube.report.config.compare.filter_field,日期过滤字段,日期過濾字段,Date Filter Field,Champ de filtre date,日付フィルターフィールド,날짜 필터 필드,Поле фильтра даты,Campo de filtro de fecha,Datumfilterfeld,Campo de filtro de data,Bidang filter tanggal,حقل فلتر التاريخ
+cube.report.config.compare.filter_placeholder,请选择 BETWEEN 类型的日期过滤器,請選擇 BETWEEN 類型的日期過濾器,Select a date filter (BETWEEN),Sélectionner un filtre de date,日付フィルターを選択,날짜 필터 선택,Выберите фильтр даты,Seleccionar filtro de fecha,Datumsfilter auswählen,Selecionar filtro de data,Pilih filter tanggal,اختر فلتر التاريخ
+cube.report.config.compare.current_label,当期标签,當期標籤,Current Period Label,Étiquette période actuelle,当期ラベル,현재 기간 레이블,Метка текущего периода,Etiqueta período actual,Aktuelle Periodenbezeichnung,Rótulo período atual,Label periode saat ini,تسمية الفترة الحالية
+cube.report.config.compare.compare_label,对比期标签,對比期標籤,Compare Period Label,Étiquette période comparée,比較期ラベル,비교 기간 레이블,Метка периода сравнения,Etiqueta período comparado,Vergleichsperiodenbezeichnung,Rótulo período comparado,Label periode pembanding,تسمية فترة المقارنة

@@ -1,0 +1,30 @@
+package xyz.erupt.cloud.server.node;
+
+import lombok.Getter;
+import lombok.Setter;
+import xyz.erupt.cloud.common.model.NodeInfo;
+
+import java.io.Serial;
+import java.io.Serializable;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+
+/**
+ * @author YuePeng
+ * date 2021/12/22 00:12
+ */
+@Getter
+@Setter
+public class MetaNode extends NodeInfo implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = -10086;
+
+    //Service registration time
+    private Date registerTime;
+
+    //Service auto-registration addresses
+    private Set<String> locations = new HashSet<>();
+
+}

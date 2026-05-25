@@ -1,0 +1,26 @@
+{
+    "name": "erupt",
+    "short_name": "erupt",
+    "description": "Erupt Engine",
+    "author": "YuePeng",
+    "mode": "fullscreen",
+    "theme_color": "#05192c",
+    "background_color": "#fafafa",
+    "display": "standalone",
+    "scope": "./",
+    "start_url": "./",
+    "icons": [
+        {
+            "src": "assets/logo-1x.png",
+            "sizes": "144*144",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "assets/logo-1x.png",
+            "sizes": "300x300",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ]
+}

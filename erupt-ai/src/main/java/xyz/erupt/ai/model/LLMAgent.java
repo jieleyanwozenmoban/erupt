@@ -1,0 +1,107 @@
+package xyz.erupt.ai.model;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.springframework.beans.BeanUtils;
+import xyz.erupt.ai.core.LlmConfig;
+import xyz.erupt.ai.core.LlmRequest;
+import xyz.erupt.ai.handler.DynamicPromptFetch;
+import xyz.erupt.annotation.Erupt;
+import xyz.erupt.annotation.EruptField;
+import xyz.erupt.annotation.EruptI18n;
+import xyz.erupt.annotation.constant.AnnotationConst;
+import xyz.erupt.annotation.fun.DataProxy;
+import xyz.erupt.annotation.sub_field.Edit;
+import xyz.erupt.annotation.sub_field.EditType;
+import xyz.erupt.annotation.sub_field.View;
+import xyz.erupt.annotation.sub_field.sub_edit.ChoiceType;
+import xyz.erupt.annotation.sub_field.sub_edit.CodeEditorType;
+import xyz.erupt.core.annotation.Ref;
+import xyz.erupt.core.config.GsonFactory;
+import xyz.erupt.jpa.model.MetaModelUpdateVo;
+
+/**
+ * @author YuePeng
+ * date 2025/2/22 16:21
+ */
+@Erupt(name = "Agent", dataProxy = LLMAgent.class)
+@Table(name = "e_ai_llm_agent")
+@Getter
+@Setter
+@Entity
+@EruptI18n
+@NoArgsConstructor
+public class LLMAgent extends MetaModelUpdateVo implements DataProxy<LLMAgent> {
+
+    @EruptField(
+            views = @View(title = "Name"),
+            edit = @Edit(title = "Name", notNull = true)
+    )
+    private String name;
+
+    @EruptField(
+            views = @View(title = "Enabled"),
+            edit = @Edit(title = "Enabled", notNull = true)
+    )
+    private Boolean enable = true;
+
+    @EruptField(
+            views = @View(title = "Prompt Handler"),
+            edit = @Edit(title = "Prompt Handler", type = EditType.CHOICE, choiceType = @ChoiceType(fetchHandler = DynamicPromptFetch.class))
+    )
+    @JsonIgnore
+    private String promptHandler;
+
+    @EruptField(
+            views = @View(title = "Hint List"),
+            edit = @Edit(title = "Hint List", type = EditType.TAGS)
+    )
+    @Column(length = AnnotationConst.REMARK_LENGTH)
+    private String hint;
+
+    @JsonIgnore
+    @Column(length = AnnotationConst.CONFIG_LENGTH)
+    @EruptField(
+            views = @View(title = "Prompt"),
+            edit = @Edit(title = "Prompt", type = EditType.CODE_EDITOR, codeEditType = @CodeEditorType(language = "python"))
+    )
+    private String prompt;
+
+    @Column(length = AnnotationConst.REMARK_LENGTH)
+    @EruptField(
+            views = @View(title = "Description"),
+            edit = @Edit(title = "Description", type = EditType.TEXTAREA)
+    )
+    private String remark;
+
+    @Column(length = AnnotationConst.CONFIG_LENGTH)
+    @EruptField(
+            views = @View(title = "Agent Config"),
+            edit = @Edit(title = "Agent Config", type = EditType.CODE_EDITOR, notNull = true,
+                    codeEditType = @CodeEditorType(language = "json")
+            )
+    )
+    @JsonIgnore
+    @Ref(LlmConfig.class)
+    private String config;
+
+    @Override
+    public void addBehavior(LLMAgent llmAgent) {
+        llmAgent.setConfig(LLMDataProxy.gson.toJson(new LlmConfig()));
+    }
+
+    public void mergeToLLmRequest(LLM llm) {
+        LlmRequest llmRequest = llm.toLlmRequest();
+        LlmConfig llmConfig = GsonFactory.getGson().fromJson(config, LlmConfig.class);
+        BeanUtils.copyProperties(llmConfig, llmRequest);
+    }
+
+    public LLMAgent(Long id) {
+        this.setId(id);
+    }
+}

@@ -1,0 +1,507 @@
+package xyz.erupt.core.util;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.math.NumberUtils;
+import xyz.erupt.annotation.EruptField;
+import xyz.erupt.annotation.config.QueryExpression;
+import xyz.erupt.annotation.constant.AnnotationConst;
+import xyz.erupt.annotation.constant.SceneEnum;
+import xyz.erupt.annotation.exception.EruptException;
+import xyz.erupt.annotation.fun.AttachmentProxy;
+import xyz.erupt.annotation.fun.VLModel;
+import xyz.erupt.annotation.query.Condition;
+import xyz.erupt.annotation.sub_field.Edit;
+import xyz.erupt.annotation.sub_field.EditType;
+import xyz.erupt.annotation.sub_field.EditTypeSearch;
+import xyz.erupt.annotation.sub_field.View;
+import xyz.erupt.annotation.sub_field.sub_edit.Dynamic;
+import xyz.erupt.annotation.sub_field.sub_edit.ReferenceTableType;
+import xyz.erupt.annotation.sub_field.sub_edit.ReferenceTreeType;
+import xyz.erupt.annotation.sub_field.sub_edit.TagsType;
+import xyz.erupt.core.annotation.EruptAttachmentUpload;
+import xyz.erupt.core.config.GsonFactory;
+import xyz.erupt.core.constant.EruptConst;
+import xyz.erupt.core.exception.EruptApiErrorTip;
+import xyz.erupt.core.i18n.I18nTranslate;
+import xyz.erupt.core.invoke.DataProxyInvoke;
+import xyz.erupt.core.proxy.AnnotationProcess;
+import xyz.erupt.core.service.EruptApplication;
+import xyz.erupt.core.service.EruptCoreService;
+import xyz.erupt.core.view.EruptApiModel;
+import xyz.erupt.core.view.EruptFieldModel;
+import xyz.erupt.core.view.EruptModel;
+import xyz.erupt.linq.lambda.LambdaSee;
+
+import java.lang.reflect.Field;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
+import java.util.regex.Pattern;
+import java.util.stream.Stream;
+
+/**
+ * @author YuePeng
+ * date 11/1/18.
+ */
+@Slf4j
+public class EruptUtil {
+
+    // Extract the field marked as "erupt" from the "object" and place it into the "map".
+
+    /**
+     * @param valueMapping whether to map to the actual value
+     */
+    @SneakyThrows
+    public static Map<String, Object> generateEruptDataMap(EruptModel eruptModel, Object obj, boolean valueMapping) {
+        Map<String, Object> map = new HashMap<>();
+        for (EruptFieldModel fieldModel : eruptModel.getEruptFieldModels()) {
+            if (AnnotationConst.EMPTY_STR.equals(fieldModel.getEruptField().edit().title()) &&
+                    !eruptModel.getErupt().primaryKeyCol().equals(fieldModel.getFieldName())) {
+                continue;
+            }
+            Field field = fieldModel.getField();
+            field.setAccessible(true);
+            Object value = field.get(obj);
+            if (null != value) {
+                EruptField eruptField = fieldModel.getEruptField();
+                switch (eruptField.edit().type()) {
+                    case NUMBER:
+                        Number val = (Number) value;
+                        if (val.doubleValue() > GsonFactory.JS_MAX_NUMBER || val.doubleValue() < GsonFactory.JS_MIN_NUMBER) {
+                            map.put(field.getName(), val.toString());
+                        } else {
+                            map.put(field.getName(), value);
+                        }
+                        break;
+                    case REFERENCE_TREE:
+                    case REFERENCE_TABLE:
+                        String id;
+                        String label;
+                        if (eruptField.edit().type() == EditType.REFERENCE_TREE) {
+                            ReferenceTreeType referenceTreeType = eruptField.edit().referenceTreeType();
+                            id = referenceTreeType.id();
+                            label = referenceTreeType.label();
+                        } else {
+                            ReferenceTableType referenceTableType = eruptField.edit().referenceTableType();
+                            id = referenceTableType.id();
+                            label = referenceTableType.label();
+                        }
+                        Map<String, Object> referMap = new HashMap<>();
+                        Object rid = ReflectUtil.findFieldChain(id, value);
+                        if (null == rid) {
+                            referMap.put(id, null);
+                        } else {
+                            referMap.put(id, rid.toString());
+                        }
+                        referMap.put(label, ReflectUtil.findFieldChain(label, value));
+                        for (View view : eruptField.views()) {
+                            // Fix the defect where table columns cannot display sub-class properties (e.g. column config like xxx.yyy.zzz), requires a corresponding frontend bug fix.
+                            // Fix the issue where sub-class properties cannot be displayed in one-to-many relationships
+                            String columnKey = view.column().replace(EruptConst.DOT, "_");
+                            Object columnValue = ReflectUtil.findFieldChain(view.column(), value);
+                            referMap.put(columnKey, columnValue);
+                            map.put(field.getName() + "_" + columnKey, columnValue);
+                        }
+                        map.put(field.getName(), referMap);
+                        break;
+                    case COMBINE:
+                        map.put(field.getName(), generateEruptDataMap(EruptCoreService.getErupt(fieldModel.getFieldReturnName()), value, valueMapping));
+                        break;
+                    case CHECKBOX:
+                    case TAB_TREE:
+                        EruptModel tabEruptModel = EruptCoreService.getErupt(fieldModel.getFieldReturnName());
+                        Collection<?> collection = (Collection<?>) value;
+                        if (!collection.isEmpty()) {
+                            Set<Object> idSet = new HashSet<>();
+                            Field primaryField = ReflectUtil.findClassField(collection.iterator().next().getClass(),
+                                    tabEruptModel.getErupt().primaryKeyCol());
+                            for (Object o : collection) {
+                                idSet.add(primaryField.get(o));
+                            }
+                            map.put(field.getName(), idSet);
+                        }
+                        break;
+                    case TAB_TABLE_REFER:
+                    case TAB_TABLE_ADD:
+                        EruptModel tabEruptModelRef = EruptCoreService.getErupt(fieldModel.getFieldReturnName());
+                        Collection<?> collectionRef = (Collection<?>) value;
+                        List<Object> list = new ArrayList<>();
+                        for (Object o : collectionRef) {
+                            list.add(generateEruptDataMap(tabEruptModelRef, o, valueMapping));
+                        }
+                        map.put(field.getName(), list);
+                        break;
+                    case CHOICE:
+                        if (valueMapping) {
+                            Map<String, String> kv = EruptUtil.getChoiceMap(eruptModel, eruptField.edit());
+                            if (kv.containsKey(value.toString())) {
+                                map.put(field.getName(), kv.get(value.toString()));
+                            } else {
+                                map.put(field.getName(), value);
+                            }
+                            break;
+                        }
+                    default:
+                        if (value instanceof Date d) {
+                            map.put(field.getName(), DateUtil.getFormatDate(d, DateUtil.ISO_8601));
+                        } else if (value instanceof LocalDate ld) {
+                            map.put(field.getName(), ld.format(DateTimeFormatter.ISO_LOCAL_DATE));
+                        } else if (value instanceof LocalDateTime ldt) {
+                            map.put(field.getName(), ldt.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+                        } else {
+                            map.put(field.getName(), value);
+                        }
+                        break;
+                }
+            }
+        }
+        return map;
+    }
+
+    @SneakyThrows
+    public static Map<String, Object> generateEruptDataViewMap(EruptModel eruptModel, Object obj) {
+        return null;
+    }
+
+    public static Map<String, String> getChoiceMap(EruptModel eruptModel, Edit edit) {
+        Map<String, String> choiceMap = new LinkedHashMap<>();
+        getChoiceList(eruptModel, edit).forEach(vl -> choiceMap.put(vl.getValue(), vl.getLabel()));
+        return choiceMap;
+    }
+
+    public static List<VLModel> getChoiceList(EruptModel eruptModel, Edit edit) {
+        List<VLModel> vls = new ArrayList<>();
+        if (edit.type() == EditType.CHOICE) {
+            vls.addAll(Stream.of(edit.choiceType().vl()).map(vl -> new VLModel(vl.value(), vl.label(), vl.desc(), vl.color(), vl.disable())).toList());
+            Stream.of(edit.choiceType().fetchHandler()).filter(clazz -> !clazz.isInterface()).forEach(clazz ->
+                    Optional.ofNullable(EruptSpringUtil.getBean(clazz).fetch(edit.choiceType().fetchHandlerParams())).ifPresent(vls::addAll));
+        } else if (edit.type() == EditType.MULTI_CHOICE) {
+            vls.addAll(Stream.of(edit.multiChoiceType().vl()).map(vl -> new VLModel(vl.value(), vl.label(), vl.desc(), vl.color(), vl.disable())).toList());
+            Stream.of(edit.multiChoiceType().fetchHandler()).filter(clazz -> !clazz.isInterface()).forEach(clazz ->
+                    Optional.ofNullable(EruptSpringUtil.getBean(clazz).fetch(edit.multiChoiceType().fetchHandlerParams())).ifPresent(vls::addAll));
+        }
+        if (eruptModel.isI18n()) {
+            vls.forEach(vl -> vl.setLabel(I18nTranslate.$translate(vl.getLabel())));
+        }
+        return vls;
+    }
+
+    public static List<VLModel> getChoiceListFilter(EruptModel eruptModel, Edit edit, Map<String, Object> formData) {
+        List<VLModel> vls = new ArrayList<>();
+        if (edit.type() == EditType.CHOICE) {
+            vls.addAll(Stream.of(edit.choiceType().vl()).map(vl -> new VLModel(vl.value(), vl.label(), vl.desc(), vl.color(), vl.disable())).toList());
+            Stream.of(edit.choiceType().fetchHandler()).filter(clazz -> !clazz.isInterface()).forEach(clazz ->
+                    Optional.ofNullable(EruptSpringUtil.getBean(clazz).fetchFilter(formData, edit.choiceType().fetchHandlerParams())).ifPresent(vls::addAll));
+        } else if (edit.type() == EditType.MULTI_CHOICE) {
+            vls.addAll(Stream.of(edit.multiChoiceType().vl()).map(vl -> new VLModel(vl.value(), vl.label(), vl.desc(), vl.color(), vl.disable())).toList());
+            Stream.of(edit.multiChoiceType().fetchHandler()).filter(clazz -> !clazz.isInterface()).forEach(clazz ->
+                    Optional.ofNullable(EruptSpringUtil.getBean(clazz).fetchFilter(formData, edit.multiChoiceType().fetchHandlerParams())).ifPresent(vls::addAll));
+        }
+        if (eruptModel.isI18n()) {
+            vls.forEach(vl -> vl.setLabel(I18nTranslate.$translate(vl.getLabel())));
+        }
+        return vls;
+    }
+
+    public static List<String> getTagList(TagsType tagsType) {
+        List<String> tags = new ArrayList<>(Arrays.asList(tagsType.tags()));
+        Stream.of(tagsType.fetchHandler()).filter(clazz -> !clazz.isInterface())
+                .forEach(clazz -> tags.addAll(EruptSpringUtil.getBean(clazz).fetchTags(tagsType.fetchHandlerParams())));
+        return tags;
+    }
+
+    public static Object convertObjectType(EruptFieldModel eruptFieldModel, Object obj) {
+        if (null == obj) return null;
+        if (null == eruptFieldModel) {
+            if (obj instanceof Number) {
+                return obj;
+            } else {
+                return obj.toString();
+            }
+        }
+        String str = obj.toString();
+        Edit edit = eruptFieldModel.getEruptField().edit();
+        switch (edit.type()) {
+            case DATE:
+                if (isDateField(eruptFieldModel.getFieldReturnName())) {
+                    return DateUtil.getDate(eruptFieldModel.getField().getType(), str);
+                } else {
+                    return str;
+                }
+            case REFERENCE_TREE:
+            case REFERENCE_TABLE:
+                String id = null;
+                if (edit.type().equals(EditType.REFERENCE_TREE)) {
+                    id = eruptFieldModel.getEruptField().edit().referenceTreeType().id();
+                } else if (edit.type().equals(EditType.REFERENCE_TABLE)) {
+                    id = edit.referenceTableType().id();
+                }
+                EruptFieldModel efm = EruptCoreService.getErupt(eruptFieldModel.getFieldReturnName()).getEruptFieldMap().get(id);
+                Map<String, Object> map = (Map<String, Object>) obj;
+                return TypeUtil.typeStrConvertObject(map.get(id), efm.getField().getType());
+            default:
+                return TypeUtil.typeStrConvertObject(str, eruptFieldModel.getField().getType());
+        }
+    }
+
+    // Generate a valid searchCondition
+    public static List<Condition> geneEruptSearchCondition(EruptModel eruptModel, List<Condition> searchCondition) {
+        checkEruptSearchNotnull(eruptModel, searchCondition);
+        List<Condition> legalConditions = new ArrayList<>();
+        if (null != searchCondition) {
+            for (Condition condition : searchCondition) {
+                EruptFieldModel eruptFieldModel = eruptModel.getEruptFieldMap().get(condition.getKey());
+                if (null != eruptFieldModel) {
+                    Edit edit = eruptFieldModel.getEruptField().edit();
+                    EditTypeSearch editTypeSearch = AnnotationProcess.getEditTypeSearch(edit.type());
+                    if (null != editTypeSearch && editTypeSearch.value()) {
+                        if (edit.search().value() && null != condition.getValue()) {
+                            if (condition.getValue() instanceof Collection) {
+                                Collection<?> collection = (Collection<?>) condition.getValue();
+                                if (collection.isEmpty()) {
+                                    continue;
+                                }
+                            }
+                            if (edit.search().vague()) {
+                                condition.setExpression(editTypeSearch.vagueMethod());
+                            } else {
+                                condition.setExpression(QueryExpression.EQ);
+                            }
+                            legalConditions.add(condition);
+                        }
+                    }
+                }
+            }
+        }
+        return legalConditions;
+    }
+
+    public static void checkEruptSearchNotnull(EruptModel eruptModel, List<Condition> searchCondition) {
+        Map<String, Condition> conditionMap = new HashMap<>();
+        if (null != searchCondition) {
+            searchCondition.forEach(condition -> conditionMap.put(condition.getKey(), condition));
+        }
+        for (EruptFieldModel fieldModel : eruptModel.getEruptFieldModels()) {
+            Edit edit = fieldModel.getEruptField().edit();
+            if (edit.search().value() && edit.search().notNull()) {
+                Condition condition = conditionMap.get(fieldModel.getFieldName());
+                if (null == condition || null == condition.getValue()) {
+                    throw new EruptApiErrorTip(EruptApiModel.Status.INFO, edit.title() + " " + I18nTranslate.$translate("erupt.notnull"), EruptApiModel.PromptWay.MESSAGE);
+                }
+                if (condition.getValue() instanceof List) {
+                    if (((List<?>) condition.getValue()).isEmpty()) {
+                        throw new EruptApiErrorTip(EruptApiModel.Status.INFO + edit.title() + " " + I18nTranslate.$translate("erupt.notnull"), EruptApiModel.PromptWay.MESSAGE);
+                    }
+                }
+            }
+        }
+    }
+
+    public static EruptApiModel validateEruptValue(EruptModel eruptModel, JsonObject jsonObject) {
+        for (EruptFieldModel field : eruptModel.getEruptFieldModels()) {
+            Edit edit = field.getEruptField().edit();
+            JsonElement value = jsonObject.get(field.getFieldName());
+            if (edit.notNull()) {
+                if (null == value || value.isJsonNull()) {
+                    return EruptApiModel.errorMessageApi(edit.title() + " " + I18nTranslate.$translate("erupt.notnull"));
+                } else if (String.class.getSimpleName().equals(field.getFieldReturnName())) {
+                    if (StringUtils.isBlank(value.getAsString())) {
+                        return EruptApiModel.errorMessageApi(edit.title() + " " + I18nTranslate.$translate("erupt.notnull"));
+                    }
+                }
+            }
+            if (edit.type() == EditType.COMBINE) {
+                JsonObject combine = jsonObject.getAsJsonObject(field.getFieldName());
+                if (null != combine) {
+                    EruptApiModel eam = validateEruptValue(EruptCoreService.getErupt(field.getFieldReturnName()), combine);
+                    if (eam.getStatus() == EruptApiModel.Status.ERROR) {
+                        return eam;
+                    }
+                }
+            }
+            if (!AnnotationConst.EMPTY_STR.equals(edit.dynamic().condition())) {
+                if (null == value || value.isJsonNull()) {
+                    Object dependFieldValue = null == jsonObject.get(edit.dynamic().dependField()) ? null : jsonObject.get(edit.dynamic().dependField()).getAsString();
+                    Map<String, Object> vars = new HashMap<>();
+                    vars.put(LambdaSee.field(Dynamic.Var::getValue), dependFieldValue);
+                    boolean dynamic = ScriptUtil.eval("!!(" + edit.dynamic().condition() + ")", vars, boolean.class);
+                    Dynamic.Ctrl strategy = dynamic ? edit.dynamic().match() : edit.dynamic().noMatch();
+                    if (strategy == Dynamic.Ctrl.NOTNULL) {
+                        return EruptApiModel.errorMessageApi(edit.title() + " " + I18nTranslate.$translate("erupt.notnull"));
+                    }
+                }
+            }
+            if (null != value && !value.isJsonNull() && !AnnotationConst.EMPTY_STR.equals(edit.title())) {
+                // XSS Injection Handling
+                if (edit.type() == EditType.TEXTAREA || edit.type() == EditType.INPUT) {
+                    if (SecurityUtil.xssInspect(value.getAsString())) {
+                        return EruptApiModel.errorApi(edit.title() + " " + I18nTranslate.$translate("erupt.attack.xss"));
+                    }
+                }
+                // Data type validation
+                switch (edit.type()) {
+                    case NUMBER:
+                    case SLIDER:
+                        if (!NumberUtils.isNumber(value.getAsString())) {
+                            return EruptApiModel.errorMessageApi(edit.title() + " " + I18nTranslate.$translate("erupt.must.number"));
+                        }
+                        break;
+                    case INPUT:
+                        if (!AnnotationConst.EMPTY_STR.equals(edit.inputType().regex())) {
+                            String content = value.getAsString();
+                            if (StringUtils.isNotBlank(content)) {
+                                if (!Pattern.matches(edit.inputType().regex(), content)) {
+                                    return EruptApiModel.errorMessageApi(edit.title() + " " + I18nTranslate.$translate("erupt.incorrect_format"));
+                                }
+                            }
+                        }
+                        break;
+                }
+            }
+        }
+        try {
+            DataProxyInvoke.invoke(eruptModel, (dataProxy -> dataProxy.validate(GsonFactory.getGson().fromJson(jsonObject.toString(), eruptModel.getClazz()))));
+        } catch (EruptException e) {
+            return EruptApiModel.errorMessageApi(e.getMessage());
+        }
+        return EruptApiModel.successApi();
+    }
+
+    /**
+     * Front-end data processing logic
+     */
+    public static void processEruptWebValue(EruptModel eruptModel, JsonObject jsonObject) {
+        for (EruptFieldModel field : eruptModel.getEruptFieldModels()) {
+            JsonElement value = jsonObject.get(field.getFieldName());
+            Edit edit = field.getEruptField().edit();
+            if (null != value && !value.isJsonNull()) {
+                // Decrypt the encrypted transmission for the code editor type
+                if (edit.type() == EditType.CODE_EDITOR) {
+                    jsonObject.addProperty(field.getFieldName(), SecretUtil.decodeSecret(value.getAsString()));
+                } else {
+                    if (value.isJsonObject() && edit.type() == EditType.COMBINE) {
+                        processEruptWebValue(EruptCoreService.getErupt(field.getFieldReturnName()), value.getAsJsonObject());
+                    } else if (value.isJsonArray()) {
+                        switch (edit.type()) {
+                            case TAB_TABLE_ADD:
+                            case TAB_TABLE_REFER:
+                                value.getAsJsonArray().forEach(jsonElement ->
+                                        Optional.ofNullable(EruptCoreService.getErupt(field.getFieldReturnName())).ifPresent(it -> {
+                                            processEruptWebValue(it, jsonElement.getAsJsonObject());
+                                        })
+                                );
+                                break;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    public static Object toEruptId(EruptModel eruptModel, String id) {
+        Field primaryField = ReflectUtil.findClassField(eruptModel.getClazz(), eruptModel.getErupt().primaryKeyCol());
+        return TypeUtil.typeStrConvertObject(id, primaryField.getType());
+    }
+
+    // Copy the non-empty data source of object A to object B
+    public static Object dataTarget(EruptModel eruptModel, Object data, Object target, SceneEnum sceneEnum) {
+        for (EruptFieldModel fieldModel : eruptModel.getEruptFieldModels()) {
+            EruptField eruptField = fieldModel.getEruptField();
+            boolean readonly = sceneEnum == SceneEnum.EDIT ? eruptField.edit().readonly().edit() : eruptField.edit().readonly().add();
+            if (eruptField.edit().readonly().allowChange()) {
+                readonly = false;
+            }
+            if (StringUtils.isNotBlank(eruptField.edit().title()) && !readonly) {
+                Field f = fieldModel.getField();
+                try {
+                    f.setAccessible(true);
+                    if (eruptField.edit().type() == EditType.TAB_TABLE_ADD) {
+                        Collection<?> s = (Collection<?>) f.get(target);
+                        if (null == s) {
+                            f.set(target, f.get(data));
+                        } else {
+                            s.clear();
+                            s.addAll((Collection) f.get(data));
+                            f.set(target, s);
+                        }
+                    } else {
+                        if (eruptField.edit().type() == EditType.INPUT && eruptField.edit().inputType().autoTrim() && null != f.get(data)) {
+                            f.set(target, f.get(data).toString().trim());
+                        } else {
+                            f.set(target, f.get(data));
+                        }
+                    }
+                } catch (IllegalAccessException e) {
+                    log.error("erupt data copy error", e);
+                }
+            }
+        }
+        return target;
+    }
+
+    // Clear the default values generated by serialized objects (verified through JSON strings)
+    public static void clearObjectDefaultValueByJson(Object obj, JsonObject data) {
+        ReflectUtil.findClassAllFields(obj.getClass(), field -> {
+            try {
+                field.setAccessible(true);
+                if (null != field.get(obj)) {
+                    if (!data.has(field.getName())) {
+                        field.set(obj, null);
+                    }
+                }
+            } catch (IllegalAccessException e) {
+                log.error("erupt clear error", e);
+            }
+        });
+    }
+
+    /**
+     * Convert the JSON string to an erupt entity object
+     *
+     * @param json      JSON object
+     * @param extraData Additional supplementary reflection data
+     */
+    @SneakyThrows
+    public static Object jsonToEruptEntity(EruptModel eruptModel, JsonObject json, Map<String, Object> extraData) throws InstantiationException, IllegalAccessException {
+        Gson gson = GsonFactory.getGson();
+        Object o = gson.fromJson(json.toString(), eruptModel.getClazz());
+        EruptUtil.clearObjectDefaultValueByJson(o, json);
+        Object obj = EruptUtil.dataTarget(eruptModel, o, eruptModel.getClazz().getDeclaredConstructor().newInstance(), SceneEnum.ADD);
+        if (null != extraData) {
+            for (String key : extraData.keySet()) {
+                Field field = ReflectUtil.findClassField(eruptModel.getClazz(), key);
+                field.setAccessible(true);
+                field.set(obj, gson.fromJson(extraData.get(key).toString(), field.getType()));
+            }
+        }
+        return obj;
+    }
+
+    /**
+     * Obtain the attachment upload proxy.
+     *
+     * @return AttachmentProxy
+     */
+    public static AttachmentProxy findAttachmentProxy() {
+        EruptAttachmentUpload eruptAttachmentUpload = EruptApplication.getPrimarySource().getAnnotation(EruptAttachmentUpload.class);
+        return null == eruptAttachmentUpload ? null : EruptSpringUtil.getBean(eruptAttachmentUpload.value());
+    }
+
+    // Is it a time field?
+    public static boolean isDateField(String fieldType) {
+        if (Date.class.getSimpleName().equals(fieldType)) {
+            return true;
+        } else if (LocalDate.class.getSimpleName().equals(fieldType)) {
+            return true;
+        } else {
+            return LocalDateTime.class.getSimpleName().equals(fieldType);
+        }
+    }
+
+}

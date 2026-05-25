@@ -1,0 +1,62 @@
+package xyz.erupt.core.proxy;
+
+import lombok.SneakyThrows;
+import org.aopalliance.intercept.MethodInvocation;
+import xyz.erupt.annotation.Erupt;
+import xyz.erupt.annotation.Vis;
+import xyz.erupt.annotation.sub_erupt.Drill;
+import xyz.erupt.annotation.sub_erupt.RowOperation;
+import xyz.erupt.core.invoke.ExprInvoke;
+import xyz.erupt.core.proxy.erupt.DrillProxy;
+import xyz.erupt.core.proxy.erupt.FilterProxy;
+import xyz.erupt.core.proxy.erupt.RowOperationProxy;
+import xyz.erupt.core.proxy.erupt.VisProxy;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @author YuePeng
+ * date 2022/2/5 14:19
+ */
+public class EruptProxy extends AnnotationProxy<Erupt, Void> {
+
+    @Override
+    @SneakyThrows
+    protected Object invocation(MethodInvocation invocation) {
+        if (super.matchMethod(invocation, Erupt::filter)) {
+            return FilterProxy.proxy(this.rawAnnotation.filter(),this);
+        } else if (super.matchMethod(invocation, Erupt::rowOperation)) {
+            RowOperation[] rowOperations = this.rawAnnotation.rowOperation();
+            List<RowOperation> proxyOperations = new ArrayList<>();
+            for (RowOperation rowOperation : rowOperations) {
+                if (ExprInvoke.getExpr(rowOperation.show())) {
+                    proxyOperations.add(AnnotationProxyPool.getOrPut(rowOperation, it -> new RowOperationProxy().newProxy(it, this)));
+                }
+            }
+            return proxyOperations.toArray(new RowOperation[0]);
+        } else if (super.matchMethod(invocation, Erupt::drills)) {
+            Drill[] drills = this.rawAnnotation.drills();
+            List<Drill> proxyDrills = new ArrayList<>();
+            for (Drill drill : drills) {
+                if (ExprInvoke.getExpr(drill.show())) {
+                    proxyDrills.add(AnnotationProxyPool.getOrPut(drill, it -> new DrillProxy().newProxy(it, this)));
+                }
+            }
+            return proxyDrills.toArray(new Drill[0]);
+        } else if (super.matchMethod(invocation, Erupt::vis)) {
+            Vis[] vis = this.rawAnnotation.vis();
+            List<Vis> proxyVis = new ArrayList<>();
+            for (Vis v : vis) {
+                if (ExprInvoke.getExpr(v.show())) {
+                    proxyVis.add(AnnotationProxyPool.getOrPut(v, it -> new VisProxy().newProxy(it, this)));
+                }
+            }
+            return proxyVis.toArray(new Vis[0]);
+        } else if (super.matchMethod(invocation, Erupt::name)) {
+            return ProxyContext.translate(this.rawAnnotation.name());
+        }
+        return this.invoke(invocation);
+    }
+
+}
