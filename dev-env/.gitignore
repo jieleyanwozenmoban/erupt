@@ -1,0 +1,21 @@
+# Erupt Development Environment
+dev-env/.env
+dev-env/.env.local
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Build output
+**/target/
+**/*.class
+**/*.jar
+**/*.war
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

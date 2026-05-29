@@ -1,0 +1,53 @@
+# Erupt Development Environment Profile
+# This configuration is used when running with -Dspring.profiles.active=dev
+
+spring:
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:erupt_dev}?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=${TZ:Asia/Shanghai}&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${MYSQL_USER:erupt}
+    password: ${MYSQL_PASSWORD:erupt123}
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        globally_quoted_identifiers: true
+        format_sql: true
+  data:
+    redis:
+      host: ${SPRING_REDIS_HOST:localhost}
+      port: ${SPRING_REDIS_PORT:6379}
+      password: ${SPRING_REDIS_PASSWORD:redis123}
+      database: 0
+      timeout: 5000ms
+      lettuce:
+        pool:
+          max-active: 20
+          max-idle: 10
+          min-idle: 5
+          max-wait: 3000ms
+
+erupt:
+  ai:
+    mcp:
+      server-enabled: true
+    system-prompt: You are Erupt AI. You are better at conversations in both Chinese and English. You will provide users with safe, helpful and accurate responses.
+
+# Logging configuration
+logging:
+  level:
+    xyz.erupt: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.springframework.data.redis: INFO

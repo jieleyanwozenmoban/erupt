@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    
+    <!-- Local repository path (optional, uncomment to customize) -->
+    <!-- <localRepository>${user.home}/.m2/repository</localRepository> -->
+    
+    <mirrors>
+        <!-- Aliyun Maven Mirror for faster downloads in China -->
+        <mirror>
+            <id>aliyun-maven</id>
+            <mirrorOf>central</mirrorOf>
+            <name>Aliyun Maven Mirror</name>
+            <url>https://maven.aliyun.com/repository/central</url>
+        </mirror>
+        <mirror>
+            <id>aliyun-google</id>
+            <mirrorOf>google</mirrorOf>
+            <name>Aliyun Google Mirror</name>
+            <url>https://maven.aliyun.com/repository/google</url>
+        </mirror>
+        <mirror>
+            <id>aliyun-spring</id>
+            <mirrorOf>spring</mirrorOf>
+            <name>Aliyun Spring Mirror</name>
+            <url>https://maven.aliyun.com/repository/spring</url>
+        </mirror>
+    </mirrors>
+    
+    <profiles>
+        <profile>
+            <id>jdk-17</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <maven.compiler.source>17</maven.compiler.source>
+                <maven.compiler.target>17</maven.compiler.target>
+                <maven.compiler.release>17</maven.compiler.release>
+            </properties>
+        </profile>
+        
+        <profile>
+            <id>erupt-dev</id>
+            <properties>
+                <spring.profiles.active>dev</spring.profiles.active>
+            </properties>
+        </profile>
+    </profiles>
+    
+    <activeProfiles>
+        <activeProfile>jdk-17</activeProfile>
+    </activeProfiles>
+</settings>

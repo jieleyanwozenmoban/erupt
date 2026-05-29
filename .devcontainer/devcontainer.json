@@ -1,0 +1,116 @@
+{
+    "name": "Erupt Development Environment",
+    "dockerComposeFile": [
+        "docker-compose.yml",
+        "docker-compose.devcontainer.yml"
+    ],
+    "service": "erupt-dev",
+    "workspaceFolder": "/workspace",
+    "shutdownAction": "stopCompose",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vscjava.vscode-java-debug",
+                "vscjava.vscode-java-test",
+                "vscjava.vscode-maven",
+                "vscjava.vscode-spring-boot-dashboard",
+                "vmware.vscode-spring-boot",
+                "redhat.vscode-xml",
+                "redhat.vscode-yaml",
+                "ms-azuretools.vscode-docker",
+                "ms-vscode-remote.vscode-remote-extensionpack",
+                "editorconfig.editorconfig",
+                "donjayamanne.githistory"
+            ],
+            "settings": {
+                "java.home": "/usr/lib/jvm/java-17-openjdk",
+                "java.configuration.updateBuildConfiguration": "automatic",
+                "java.compile.nullAnalysis.mode": "automatic",
+                "maven.executable.path": "/usr/bin/mvn",
+                "maven.terminal.useJavaHome": true,
+                "maven.view": "hierarchical",
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": "vscjava.vscode-java-pack",
+                "java.format.settings.url": ".vscode/java-formatter.xml",
+                "files.exclude": {
+                    "**/.git": true,
+                    "**/.DS_Store": true,
+                    "**/target": true,
+                    "**/*.class": true
+                },
+                "java.test.config": {
+                    "vmargs": [
+                        "-Dspring.profiles.active=test"
+                    ]
+                }
+            }
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "17",
+            "installMaven": true,
+            "mavenVersion": "3.9.9",
+            "installGradle": false
+        },
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": true,
+            "configureZshAsDefaultShell": true,
+            "installOhMyZsh": true,
+            "upgradePackages": true,
+            "username": "vscode",
+            "userUid": "1000",
+            "userGid": "1000"
+        },
+        "ghcr.io/devcontainers/features/git:1": {
+            "version": "latest",
+            "ppa": true
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "version": "latest",
+            "moby": true
+        }
+    },
+    "forwardPorts": [
+        3306,
+        6379,
+        8080,
+        8081
+    ],
+    "portsAttributes": {
+        "3306": {
+            "label": "MySQL",
+            "onAutoForward": "silent"
+        },
+        "6379": {
+            "label": "Redis",
+            "onAutoForward": "silent"
+        },
+        "8080": {
+            "label": "Erupt Application",
+            "onAutoForward": "notify"
+        },
+        "8081": {
+            "label": "Adminer",
+            "onAutoForward": "notify"
+        }
+    },
+    "postCreateCommand": "bash .devcontainer/post-create.sh",
+    "postStartCommand": "bash .devcontainer/post-start.sh",
+    "remoteEnv": {
+        "JAVA_HOME": "/usr/lib/jvm/java-17-openjdk",
+        "MAVEN_OPTS": "-Xmx2g -Dspring.profiles.active=dev",
+        "SPRING_PROFILES_ACTIVE": "dev",
+        "SPRING_DATASOURCE_URL": "jdbc:mysql://mysql:3306/erupt_dev?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true",
+        "SPRING_DATASOURCE_USERNAME": "erupt",
+        "SPRING_DATASOURCE_PASSWORD": "erupt123",
+        "SPRING_REDIS_HOST": "redis",
+        "SPRING_REDIS_PORT": "6379",
+        "SPRING_REDIS_PASSWORD": "redis123"
+    },
+    "containerEnv": {
+        "JAVA_HOME": "/usr/lib/jvm/java-17-openjdk",
+        "MAVEN_OPTS": "-Xmx2g"
+    }
+}

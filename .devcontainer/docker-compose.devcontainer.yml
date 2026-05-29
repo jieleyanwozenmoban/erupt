@@ -1,0 +1,36 @@
+# Docker Compose for Dev Container (extends the base configuration)
+version: '3.8'
+
+services:
+  erupt-dev:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ..:/workspace:cached
+      - maven-cache:/root/.m2
+      - gradle-cache:/root/.gradle
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    environment:
+      - JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+      - MAVEN_OPTS=-Xmx2g
+      - SPRING_PROFILES_ACTIVE=dev
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/erupt_dev?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+      - SPRING_DATASOURCE_USERNAME=erupt
+      - SPRING_DATASOURCE_PASSWORD=erupt123
+      - SPRING_REDIS_HOST=redis
+      - SPRING_REDIS_PORT=6379
+      - SPRING_REDIS_PASSWORD=redis123
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - erupt-dev-network
+
+volumes:
+  maven-cache:
+    driver: local
+  gradle-cache:
+    driver: local
